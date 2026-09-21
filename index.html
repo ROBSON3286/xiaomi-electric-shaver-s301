@@ -1,394 +1,4255 @@
 <!DOCTYPE html>
-<html>
- <head>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>xiaomi-electric-shaver-s301</title>
+
+  <!-- Script Responsivo Unificado para Viewport e Root REM -->
   <script>
-   !function (e, t) { var i = t.documentElement; t.body; function n() { var t = i.clientWidth, n = t >= 1226 ? t / 10 : 122.6; i.style.fontSize = n + "px", e.rootFontSize = n, e.oriRootFontSize = 256 } if (e.addEventListener("resize", (function () { n() }), !1), e.addEventListener("pageshow", (function (e) { e.persisted && n() }), !1), n(), e.devicePixelRatio && e.devicePixelRatio >= 2) { var o = t.createElement("div"), d = t.createElement("body"); o.style.border = "0.5px solid transparent", d.appendChild(o), i.appendChild(d), 1 === o.offsetHeight && i.classList.add("hairlines"), i.removeChild(d) } }(window, document)
+    !function (e, t) {
+      var i = t.documentElement;
+      function n() {
+        var w = e.innerWidth || i.clientWidth || 320;
+        var s;
+        if (w > 768) {
+          s = w >= 1226 ? w / 10 : 122.6;
+          e.rootFontSize = s;
+          e.oriRootFontSize = 256;
+        } else {
+          s = (w > 720 ? 720 : w < 320 ? 320 : w) / 22.5;
+          e.rootFontSize = s;
+          e.oriRootFontSize = 48;
+        }
+        i.style.fontSize = s + "px";
+      }
+      if (e.addEventListener("resize", n, !1), e.addEventListener("pageshow", function (e) { e.persisted && n(); }), n(), e.devicePixelRatio && e.devicePixelRatio >= 2) {
+        var o = t.createElement("div"), d = t.createElement("body");
+        o.style.border = "0.5px solid transparent";
+        d.appendChild(o);
+        i.appendChild(d);
+        1 === o.offsetHeight && i.classList.add("hairlines");
+        i.removeChild(d);
+      }
+    }(window, document);
   </script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
-  </script>
-  <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"/>
-  <link href="style.css?v=2" rel="stylesheet"/>
- </head>
- <body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://i02.appmifile.com/i18n/fonts/MiSansLatin/index.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <style>
+    /* Reset & Base Essenciais para Landing Page */
+    html {
+      height: 100%;
+      margin: 0 auto;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #191919;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ul,
+    li,
+    dl,
+    dt,
+    dd,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img,
+    picture,
+    video {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Controle Responsivo: Desktop vs Mobile */
+    @media screen and (min-width: 769px) {
+      .mob-prod {
+        display: none !important;
+      }
+
+      .desk-prod {
+        display: block !important;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .desk-prod {
+        display: none !important;
+      }
+
+      .mob-prod {
+        display: block !important;
+      }
+    }
+
+    /* ========================================================
+       ESTILOS DESKTOP REFINADOS (Apenas Landing Page)
+       ======================================================== */
+    @media screen and (min-width: 769px) {
+      html {
+        height: 100%;
+        margin: 0 auto
+      }
+
+      body {
+        background-color: #f5f5f5;
+        height: 100%
+      }
+
+      html,
+      body,
+      ul,
+      li,
+      p {
+        margin: 0;
+        padding: 0
+      }
+
+      li {
+        list-style: none
+      }
+
+      html>img,
+      body>img {
+        z-index: -10;
+        opacity: 0;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0
+      }
+
+      .xm-link {
+        text-decoration: none;
+        display: inline-block
+      }
+
+      .xm-link.xm-button {
+        background-color: transparent;
+        background-color: initial
+      }
+
+      .xm-button {
+        color: #fff;
+        background-color: #ff6700;
+        padding: .04688rem
+      }
+
+      .xm-text {
+        display: inline-block;
+      }
+
+      .xm-text a {
+        color: #00f;
+        text-decoration: underline
+      }
+
+      .xm-text sub,
+      .xm-text sup {
+        font-feature-settings: "tnum";
+        vertical-align: super;
+        font-size: .4em;
+        font-weight: 400;
+        top: -.6em;
+        left: .6em
+      }
+
+      .xm-blur {
+        opacity: .3 !important
+      }
+
+      .hide {
+        display: none !important
+      }
+
+      .xm-update {
+        position: relative
+      }
+
+      .xm-update:after {
+        content: "";
+        border: .00781rem solid #ff0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0
+      }
+
+      .xm-picture .xm-img {
+        width: 100%
+      }
+
+      .xm-img {
+        color: transparent
+      }
+
+      .xm-img[src=""],
+      .xm-img:not([src]) {
+        visibility: hidden
+      }
+
+      .xm-picture {
+        display: inline-flex
+      }
+
+      .sa .xm-text,
+      .eg .xm-text {
+        display: block
+      }
+
+      .sa .xm-text,
+      .sa .xm-link,
+      .sa .xm-price,
+      .sa .xm-button,
+      .eg .xm-text,
+      .eg .xm-link,
+      .eg .xm-price,
+      .eg .xm-button {
+        direction: rtl
+      }
+
+      .section {
+        background-repeat: no-repeat;
+        margin-bottom: -1px;
+        position: relative
+      }
+
+      .xm-page-area>main,
+      .xm-page-area_mobile>main {
+        z-index: 1;
+        position: relative
+      }
+
+      .xm-page-area>main {
+        width: 100% !important
+      }
+
+      .mi-bg-color {
+        background-color: #fff
+      }
+
+      .th .xm-text,
+      .mm .xm-text,
+      .kh .xm-text {
+        line-height: 1.5 !important
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        font-family: sans-serif
+      }
+
+      body {
+        margin: 0
+      }
+
+      main {
+        display: block
+      }
+
+      video {
+        vertical-align: baseline;
+        display: inline-block
+      }
+
+      a {
+        background-color: transparent
+      }
+
+      a:active,
+      a:hover {
+        outline: 0
+      }
+
+      b,
+      strong {
+        font-weight: 700
+      }
+
+      img {
+        border: 0
+      }
+
+      svg:not(:root) {
+        overflow: hidden
+      }
+
+      body {
+        color: #757575;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f5f5f5;
+        font-size: .05469rem;
+        line-height: 1.5
+      }
+
+      a {
+        color: #757575;
+        text-decoration: none
+      }
+
+      p>a {
+        color: #ff6700
+      }
+
+      p>a:hover {
+        text-decoration: underline
+      }
+
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none
+      }
+
+      sub,
+      sup {
+        vertical-align: baseline;
+        font-size: 75%;
+        line-height: 0;
+        position: relative
+      }
+
+      sup {
+        top: -.5em
+      }
+
+      sub {
+        bottom: -.25em
+      }
+
+      .price-common .xm-price__sNum {
+        margin: 0;
+        font-weight: 700
+      }
+
+      .price-common .xm-price__label {
+        margin: 0
+      }
+
+      .price-common .xm-price--current .xm-price__label {
+        font-weight: 700
+      }
+
+      .price-common .xm-price--sale .xm-price__label,
+      .price-common .xm-price--sale .xm-price__sNum {
+        margin: 0
+      }
+
+      .price-common .xm-price--origin .xm-price__label {
+        font-size: 100%
+      }
+
+      .scroll-common .slick-slider .slick-dots li>button {
+        text-indent: -39.0586rem;
+        background-color: transparent;
+        border: .00781rem solid #fff;
+        border-radius: 50%;
+        width: .05469rem;
+        height: .05469rem;
+        padding: 0
+      }
+
+      .scroll-common .slick-slider .slick-dots li.slick-active>button {
+        background-color: #fff
+      }
+
+      .scroll-common .slick-slider .slick-arrow {
+        width: .19531rem;
+        height: .19531rem
+      }
+
+      .scroll-common .slick-slider .slick-prev {
+        background: url(//i01.appmifile.com/webfile/globalimg/zh/2021/left.png) 0 0/100% 100% no-repeat
+      }
+
+      .scroll-common .slick-slider .slick-next {
+        background: url(//i01.appmifile.com/webfile/globalimg/zh/2021/right.png) 0 0/100% 100% no-repeat
+      }
+
+      .scroll-small .slick-slide div img {
+        border-radius: .19531rem
+      }
+
+      a {
+        color: inherit;
+        font-size: 14px;
+        text-decoration: none
+      }
+
+      main {
+        font-size: 16px;
+        display: inline-block
+      }
+
+      body {
+        color: var(--title-dark);
+        background-color: var(--background-base)
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 4.375rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .image3 {
+        z-index: 0;
+        width: 10rem;
+        height: 4.375rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .div4 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 3.82813rem;
+        margin-top: -.04297rem;
+        margin-left: -8.41406rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .div4 .image5 {
+        width: 4.41797rem;
+        height: 1.50391rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .div4 .header-title {
+        color: #fff;
+        margin-top: .07813rem;
+        font-size: .34375rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .div4 .header--sub-title {
+        color: #fff;
+        width: 3.82813rem;
+        margin-top: -.07813rem;
+        font-size: .35156rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .div4 .div6 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 3.01953rem;
+        margin-top: .23438rem;
+        margin-left: .00781rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .div4 .div6 .split_text4263 {
+        color: #fff;
+        width: 3.125rem;
+        font-size: .1875rem;
+        line-height: .26563rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div2 .div4 .price-color {
+        color: #fff;
+        margin-top: .07813rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 {
+        z-index: 16;
+         
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 2.1875rem;
+        padding-right: 1.76953rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .image9 {
+        z-index: 0;
+        width: 10rem;
+        height: 2.1875rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 {
+        z-index: 7;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 6.77344rem;
+        min-height: .39844rem;
+        margin-top: 9%;
+        margin-left: -8.36719rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div11 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: .46094rem;
+        min-height: .22266rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div11 .split_text4262 {
+        color: #fff;
+        text-align: center;
+        width: .47266rem;
+        font-size: .10156rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div12 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: .6875rem;
+        min-height: .24609rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div12 .split_text4261 {
+        color: #fff;
+        text-align: center;
+        width: .75391rem;
+        font-size: .10156rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div13 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1.20313rem;
+        min-height: .39453rem;
+        margin-top: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div13 .split_text4260 {
+        color: #fff;
+        text-align: center;
+        width: 1.25391rem;
+        font-size: .10156rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div14 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: .80078rem;
+        min-height: .39453rem;
+        margin-top: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div14 .split_text4259 {
+        color: #fff;
+        text-align: center;
+        width: .93359rem;
+        font-size: .10156rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div15 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: .81641rem;
+        min-height: .37109rem;
+        margin-top: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div15 .split_text4258 {
+        color: #fff;
+        text-align: center;
+        width: .875rem;
+        font-size: .10156rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div16 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: .73438rem;
+        min-height: .37109rem;
+        margin-top: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .div10 .div16 .split_text4257 {
+        color: #fff;
+        text-align: center;
+        width: .8125rem;
+        font-size: .10156rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .image17 {
+        z-index: 1;
+        width: .37891rem;
+        height: .37891rem;
+        margin-top: -.51953rem;
+        margin-left: -6.73438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .image18 {
+        z-index: 2;
+        width: .37891rem;
+        height: .37891rem;
+        margin-top: -.51953rem;
+        margin-left: .61328rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .image19 {
+        z-index: 3;
+        width: .37891rem;
+        height: .37891rem;
+        margin-top: -.51953rem;
+        margin-left: .97656rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .image20 {
+        z-index: 4;
+        width: .375rem;
+        height: .37891rem;
+        margin-top: -.51953rem;
+        margin-left: 1.03516rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .image21 {
+        z-index: 5;
+        width: .37891rem;
+        height: .37891rem;
+        margin-top: -.51953rem;
+        margin-left: .84766rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div8 .image22 {
+        z-index: 6;
+        width: .375rem;
+        height: .37891rem;
+        margin-top: -.51953rem;
+        margin-left: .82031rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div23 {
+        z-index: 15;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 3.93359rem;
+        margin-top: -.00391rem;
+        padding-right: 2.22656rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div23 .image24 {
+        z-index: 0;
+        width: 10rem;
+        height: 3.93359rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div23 .div25 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 2.60156rem;
+        min-height: .93359rem;
+        margin-top: -.05469rem;
+        margin-left: -4.82813rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div23 .div25 .div26 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.34375rem;
+        min-height: .41016rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div23 .div25 .div26 .split_text4256 {
+        color: #fff;
+        width: 2.69141rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div23 .div25 .div27 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.55469rem;
+        min-height: .375rem;
+        margin-top: .14844rem;
+        margin-left: .01172rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div23 .div25 .div27 .split_text4255 {
+        color: #fff;
+        width: 2.63281rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div28 {
+        z-index: 14;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 4.03125rem;
+        margin-top: -.02344rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div28 .image29 {
+        z-index: 0;
+        width: 10rem;
+        height: 4.03125rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div28 .div30 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 2.39063rem;
+        min-height: 1.4375rem;
+        margin-top: -.02344rem;
+        margin-left: -8.27344rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div28 .div30 .div31 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.36328rem;
+        min-height: .75391rem;
+        margin-left: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div28 .div30 .div31 .split_text4254 {
+        color: #fff;
+        letter-spacing: -.00391rem;
+        width: 3.55469rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div28 .div30 .div32 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.39063rem;
+        min-height: .55469rem;
+        margin-top: .12891rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div28 .div30 .div32 .split_text4253 {
+        color: #fff;
+        width: 2.68438rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div33 {
+        z-index: 13;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 1.71484rem;
+        margin-top: -.01172rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div33 .image34 {
+        z-index: 0;
+        width: 10rem;
+        height: 1.71484rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div33 .div35 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 5.07422rem;
+        min-height: .47656rem;
+        margin-top: -1.12109rem;
+        margin-left: -.00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div33 .div35 .split_text4252 {
+        color: #fff;
+        letter-spacing: -.00391rem;
+        text-align: center;
+        width: 5.76953rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div36 {
+        z-index: 12;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 3.80469rem;
+        margin-top: -.0625rem;
+        padding-right: 1.89063rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div36 .image37 {
+        z-index: 0;
+        width: 10rem;
+        height: 3.80469rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div36 .div38 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 2.62109rem;
+        min-height: 1.38281rem;
+        margin-top: -.33594rem;
+        margin-left: -4.51172rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div36 .div38 .div39 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.62109rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div36 .div38 .div39 .split_text4251 {
+        color: #fff;
+        letter-spacing: -.00391rem;
+        width: 3.6875rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div36 .div38 .div40 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.29688rem;
+        min-height: .53125rem;
+        margin-top: .14063rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div36 .div38 .div40 .split_text4250 {
+        color: #fff;
+        width: 2.47656rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div41 {
+        z-index: 11;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 4.03125rem;
+        margin-top: -.00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div41 .image42 {
+        z-index: 0;
+        width: 10rem;
+        height: 4.03125rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div41 .div43 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 3.24609rem;
+        min-height: 1.04688rem;
+        margin-top: -.17188rem;
+        margin-left: -8.34766rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div41 .div43 .div44 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 3.23047rem;
+        min-height: .49219rem;
+        margin-left: .01563rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div41 .div43 .div44 .split_text4249 {
+        color: #fff;
+        letter-spacing: -.00391rem;
+        width: 3.30469rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div41 .div43 .div45 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.46484rem;
+        min-height: .40625rem;
+        margin-top: .14844rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div41 .div43 .div45 .split_text4248 {
+        color: #fff;
+        width: 2.58594rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 {
+        z-index: 10;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 4.24219rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .image47 {
+        z-index: 0;
+        width: 10rem;
+        height: 4.24219rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 {
+        z-index: 3;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 2.56641rem;
+        margin-top: -3.48047rem;
+        margin-left: 2.59766rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div49 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.56641rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div49 .split_text4247 {
+        color: #fff;
+        width: 3.71484rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div50 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.37891rem;
+        min-height: .39844rem;
+        margin-top: .12109rem;
+        margin-left: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div50 .split_text4246 {
+        color: #fff;
+        width: 4.51563rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div51 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.16016rem;
+        margin-top: .14063rem;
+        margin-left: .01563rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div51 .image53 {
+        z-index: 2;
+        width: .61328rem;
+        height: .16406rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div51 .split_text4245 {
+        color: #fff;
+        width: 2.23828rem;
+        margin-top: .20313rem;
+        font-size: .10938rem;
+        line-height: .13672rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div52 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.14063rem;
+        margin-top: .41406rem;
+        margin-left: .01953rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div52 .image54 {
+        z-index: 2;
+        width: .61328rem;
+        height: .16406rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div46 .div48 .div52 .split_text4244 {
+        color: #fff;
+        width: 2.24609rem;
+        margin-top: .125rem;
+        font-size: .10938rem;
+        line-height: .14063rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div55 {
+        z-index: 9;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 1.71484rem;
+        margin-top: -.00781rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div55 .image56 {
+        z-index: 0;
+        width: 10rem;
+        height: 1.71484rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div55 .div57 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 2.26953rem;
+        min-height: .42969rem;
+        margin-top: -1.12109rem;
+        margin-left: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div55 .div57 .split_text4243 {
+        color: #fff;
+        letter-spacing: -.00391rem;
+        text-align: center;
+        width: 4.44531rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 {
+         
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 3.86719rem;
+        margin-top: -.00391rem;
+        display: flex;
+        position: relative
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .image59 {
+        z-index: 0;
+        width: 10rem;
+        height: 3.86719rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .image70 {
+        z-index: 1;
+        width: .07422rem;
+        height: 1.07422rem;
+        position: absolute;
+        top: 1.21094rem;
+        left: 6.08594rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 {
+        z-index: 3;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 1.84766rem;
+        display: flex;
+        position: absolute;
+        top: 1.18359rem;
+        left: 6.21094rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div64 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: .71875rem;
+        min-height: .13281rem;
+        margin-left: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div64 .split_text4240 {
+        color: #fff;
+        width: 1.90234rem;
+        font-size: .14063rem;
+        line-height: .14063rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div65 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 1.06641rem;
+        min-height: .10156rem;
+        margin-top: .14844rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div65 .split_text4239 {
+        color: #fff;
+        width: 2.09375rem;
+        font-size: .14063rem;
+        line-height: .14063rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div66 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 1.84375rem;
+        min-height: .13281rem;
+        margin-top: .20313rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div66 .split_text4238 {
+        color: #fff;
+        width: 2.9375rem;
+        font-size: .14063rem;
+        line-height: .14063rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div69 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: .86328rem;
+        min-height: .13281rem;
+        margin-top: .21094rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div63 .div69 .split_text4237 {
+        color: #fff;
+        width: 1.98047rem;
+        font-size: .14063rem;
+        line-height: .14063rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div60 {
+        z-index: 2;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 6.03516rem;
+        min-height: 1.13281rem;
+        margin-top: -.32031rem;
+        margin-left: -7.99219rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div60 .div61 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 6.02734rem;
+        min-height: .76953rem;
+        margin-left: .00781rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div60 .div61 .div62 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.32422rem;
+        min-height: .6875rem;
+        margin-bottom: .01172rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div60 .div61 .div62 .split_text4242 {
+        color: #fff;
+        width: 2.47656rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div60 .div67 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 5.05469rem;
+        min-height: .25rem;
+        margin-top: .11328rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div60 .div67 .div68 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 1.92969rem;
+        min-height: .25rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div58 .div60 .div67 .div68 .split_text4241 {
+        color: #fff;
+        width: 3.01172rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div71 {
+        z-index: 7;
+         
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 4rem;
+        padding-right: 2.12109rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div71 .image72 {
+        z-index: 0;
+        width: 10rem;
+        height: 4rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div71 .div73 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 2.54688rem;
+        min-height: 1rem;
+        margin-left: -4.66797rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div71 .div73 .div74 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.54688rem;
+        min-height: .45703rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div71 .div73 .div74 .split_text4236 {
+        color: #fff;
+        width: 4.68359rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div71 .div73 .div75 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.50781rem;
+        min-height: .39844rem;
+        margin-top: .14453rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div71 .div73 .div75 .split_text4235 {
+        color: #fff;
+        width: 2.63281rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 {
+        z-index: 6;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 4rem;
+        margin-top: -.00781rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .image77 {
+        z-index: 0;
+        width: 10rem;
+        height: 4rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 {
+        z-index: 2;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 3.16797rem;
+        margin-top: -.17578rem;
+        margin-left: -8.32813rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div79 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 3.15625rem;
+        min-height: .45703rem;
+        margin-left: .01172rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div79 .split_text4234 {
+        color: #fff;
+        width: 3.23047rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div80 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.45703rem;
+        min-height: .39844rem;
+        margin-top: .13672rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div80 .split_text4233 {
+        color: #fff;
+        width: 2.56641rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div81 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1.46875rem;
+        min-height: .24219rem;
+        margin-top: .69922rem;
+        margin-left: .04297rem;
+        display: flex;
+        gap: 50%;
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div81 .div82 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: .37109rem;
+        min-height: .24219rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div81 .div82 .split_text4232 {
+        color: #fff;
+        text-align: center;
+        width: .77734rem;
+        font-size: .10156rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div81 .div83 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: .70703rem;
+        min-height: .24219rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div78 .div81 .div83 .split_text4231 {
+        color: #fff;
+        text-align: center;
+        width: 2.77734rem;
+        font-size: .10156rem;
+        line-height: .14844rem;
+        gap: 50px;
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div84 {
+        z-index: 3;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1.60859rem;
+        min-height: .37891rem;
+        margin-top: .64453rem;
+        margin-left: -3.125rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div76 .div84 .image85,
+      .div1.fly-birds-page_49648576b6 .div76 .div84 .image86 {
+        width: .37891rem;
+        height: .37891rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div87 {
+        z-index: 5;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 1.71484rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div87 .image88 {
+        z-index: 0;
+        width: 10rem;
+        height: 1.71484rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div87 .div89 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 3.35938rem;
+        min-height: .48047rem;
+        margin-top: -1.12109rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div87 .div89 .split_text4230 {
+        color: #fff;
+        letter-spacing: -.00391rem;
+        text-align: center;
+        width: 5.61719rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 {
+        z-index: 4;
+         
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10rem;
+        height: 3.55859rem;
+        padding-right: 1.71875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .image91 {
+        z-index: 0;
+        width: 10rem;
+        height: 3.55859rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 3.17188rem;
+        min-height: 2.01953rem;
+        margin-top: .44531rem;
+        margin-left: -4.89063rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 .div93 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 3.16406rem;
+        min-height: .45703rem;
+        margin-left: .00781rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 .div93 .split_text4229 {
+        color: #fff;
+        width: 3.30469rem;
+        font-size: .23438rem;
+        line-height: .23438rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 .div94 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 3.05859rem;
+        min-height: .54688rem;
+        margin-top: .13672rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 .div94 .split_text4228 {
+        color: #fff;
+        width: 3.17969rem;
+        font-size: .10938rem;
+        line-height: .14844rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 .div95 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 2.05859rem;
+        min-height: .08984rem;
+        margin-top: .78906rem;
+        margin-left: .00391rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div90 .div92 .div95 .split_text4227 {
+        color: #fff;
+        width: 3.14453rem;
+        font-size: .09375rem;
+        line-height: .16406rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div96 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 4.96484rem;
+        margin-top: .36328rem;
+        margin-left: .65234rem;
+        padding-bottom: .375rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_49648576b6 .div96 .split_text4224 {
+        color: #8f8f8f;
+        width: 5.625rem;
+        font-size: .09375rem;
+        line-height: .11719rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div96 .split_text4225 {
+        color: #8f8f8f;
+        width: 5.62891rem;
+        margin-top: .07813rem;
+        font-size: .09375rem;
+        line-height: .11719rem
+      }
+
+      .div1.fly-birds-page_49648576b6 .div96 .split_text4226 {
+        color: #8f8f8f;
+        width: 4.42969rem;
+        margin-top: .07813rem;
+        font-size: .09375rem;
+        line-height: .11719rem
+      }
+
+      .f-light {
+        font-weight: 300
+      }
+
+      .f-regular {
+        font-weight: 400
+      }
+
+      .f-medium {
+        font-weight: 500
+      }
+
+      .f-bold {
+        font-weight: 700
+      }
+
+      .xm-price,
+      .xm-button {
+        font-weight: 400 !important
+      }
+
+      .price-common .xm-price__sNum,
+      .price-common .xm-price--current .xm-price__label {
+        font-weight: 700 !important
+      }
+
+      .xm-page-area_mobile .root-product__footer {
+        opacity: 0
+      }
+
+      .faq-con .section {
+         
+        color: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 4.78906rem;
+        margin-bottom: -.00391rem;
+        font-weight: 400;
+        line-height: 1.3;
+        position: relative;
+        overflow: hidden
+      }
+
+      .faq-con .section .xm-text {
+        display: block
+      }
+
+      .faq-con .section .flex-list {
+        justify-content: center;
+        align-items: center;
+        display: flex
+      }
+    }
+
+    /* ========================================================
+       ESTILOS MOBILE REFINADOS (Apenas Landing Page)
+       ======================================================== */
+    @media screen and (max-width: 768px) {
+      html {
+        height: 100%;
+        margin: 0 auto
+      }
+
+      body {
+        background-color: #f5f5f5;
+        height: 100%
+      }
+
+      html,
+      body,
+      ul,
+      li,
+      p {
+        margin: 0;
+        padding: 0
+      }
+
+      li {
+        list-style: none
+      }
+
+      html>img,
+      body>img {
+        z-index: -10;
+        opacity: 0;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0
+      }
+
+      .xm-link {
+        text-decoration: none;
+        display: inline-block
+      }
+
+      .xm-link.xm-button {
+        background-color: transparent;
+        background-color: initial
+      }
+
+      .xm-button {
+        color: #fff;
+        background-color: #ff6700;
+        padding: .25rem
+      }
+
+      .xm-text {
+        display: inline-block;
+      }
+
+      .xm-text a {
+        color: #00f;
+        text-decoration: underline
+      }
+
+      .xm-text sub,
+      .xm-text sup {
+        font-feature-settings: "tnum";
+        vertical-align: super;
+        font-size: .4em;
+        font-weight: 400;
+        top: -.6em;
+        left: .6em
+      }
+
+      .xm-blur {
+        opacity: .3 !important
+      }
+
+      .hide {
+        display: none !important
+      }
+
+      .xm-update {
+        position: relative
+      }
+
+      .xm-update:after {
+        content: "";
+        border: .04167rem solid #ff0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0
+      }
+
+      .xm-picture .xm-img {
+        width: 100%
+      }
+
+      .xm-img {
+        color: transparent
+      }
+
+      .xm-img[src=""],
+      .xm-img:not([src]) {
+        visibility: hidden
+      }
+
+      .xm-picture {
+        display: inline-flex
+      }
+
+      .sa .xm-text,
+      .eg .xm-text {
+        display: block
+      }
+
+      .sa .xm-text,
+      .sa .xm-link,
+      .sa .xm-button,
+      .eg .xm-text,
+      .eg .xm-link,
+      .eg .xm-button {
+        direction: rtl
+      }
+
+      .section {
+        background-repeat: no-repeat;
+        margin-bottom: -1px;
+        position: relative
+      }
+
+      .xm-page-area>main,
+      .xm-page-area_mobile>main {
+        z-index: 1;
+        position: relative
+      }
+
+      .xm-page-area>main {
+        width: 100% !important
+      }
+
+      .mi-bg-color {
+        background-color: #fff
+      }
+
+      .th .xm-text,
+      .mm .xm-text,
+      .kh .xm-text {
+        line-height: 1.5 !important
+      }
+
+      main {
+        display: block
+      }
+
+      video {
+        display: inline-block
+      }
+
+      a:focus {
+        outline: thin dotted #333;
+        outline: .10417rem auto -webkit-focus-ring-color;
+        outline-offset: -.04167rem
+      }
+
+      a:hover,
+      a:active {
+        outline: 0
+      }
+
+      b,
+      strong {
+        font-weight: 700
+      }
+
+      sub,
+      sup {
+        vertical-align: baseline;
+        font-size: 75%;
+        line-height: 0;
+        position: relative
+      }
+
+      sup {
+        top: -.5em
+      }
+
+      sub {
+        bottom: -.25em
+      }
+
+      img {
+        vertical-align: middle;
+        border: 0;
+        height: auto
+      }
+
+      body,
+      ul,
+      p {
+        margin: 0
+      }
+
+      ul {
+        padding: 0;
+        list-style: none
+      }
+
+      body {
+        min-width: 6.66667rem;
+        color: var(--title-dark);
+        background-color: var(--background-base-variant);
+        -webkit-tap-highlight-color: transparent;
+        font-size: .75rem;
+        line-height: 1.5
+      }
+
+      a {
+        color: #000;
+        text-decoration: none
+      }
+
+      .slick-slider .slick-list,
+      .slick-slider .slick-slider,
+      .slick-slider .slick-track {
+        display: block
+      }
+
+      .slick-slider .slick-slider {
+        position: relative
+      }
+
+      .slick-slider .slick-list {
+        overflow: hidden
+      }
+
+      .slick-slider .slick-slide {
+        float: left;
+        touch-action: pan-y;
+        height: 100%;
+        display: block
+      }
+
+      .slick-slider .slick-dots {
+        flex-basis: auto;
+        position: absolute;
+        bottom: .33333rem;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex !important
+      }
+
+      .slick-slider .slick-dots li {
+        margin: 0 .10417rem;
+        overflow: hidden
+      }
+
+      .slick-slider .slick-dots li>button {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        display: block
+      }
+
+      .slick-slider .slick-dots li.slick-active>button {
+        background-color: #b0b0b0
+      }
+
+      main {
+        font-size: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 22.5rem;
+        height: 34.2917rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 .image3 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 34.2917rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 .div4 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 18.5417rem;
+        min-height: 6.39583rem;
+        margin-top: -29.9583rem;
+        margin-left: 1.875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 .div4 .image5 {
+        width: 18.3333rem;
+        height: 5.83333rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 .div4 .header-title {
+        color: #fff;
+        font-size: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 .div4 .header--sub-title {
+        color: #fff;
+        width: 18.5417rem;
+        margin-top: -.375rem;
+        font-size: 1.58333rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 .div4 .div6 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 12.6458rem;
+        min-height: 2.1875rem;
+        margin-left: .04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div2 .div4 .div6 .split_text4305 {
+        color: #fff;
+        width: 13.1667rem;
+        font-size: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 {
+        z-index: 16;    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 26.5417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .image9 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 26.5417rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .image10 {
+        z-index: 1;
+        width: 2.72917rem;
+        height: 2.72917rem;
+        margin-top: -23.6875rem;
+        margin-left: -10.1458rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .image11 {
+        z-index: 2;
+        width: 2.72917rem;
+        height: 2.72917rem;
+        margin-top: -2.72917rem;
+        margin-left: 9.77083rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 {
+        z-index: 2;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 17.4375rem;
+        min-height: 17.3125rem;
+        margin-top: .70833rem;
+        margin-left: -1.60417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div13 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 14.2917rem;
+        min-height: 1.45833rem;
+        margin-right: .41667rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div13 .div14 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 3.4375rem;
+        min-height: 1.29167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div13 .div14 .split_text4299 {
+        color: #fff;
+        text-align: center;
+        width: 9.4375rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div13 .div15 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 5.08333rem;
+        min-height: 1.45833rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div13 .div15 .split_text4300 {
+        color: #fff;
+        text-align: center;
+        width: 9.4375rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div16 {
+         
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 17.4375rem;
+        min-height: 2.20833rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div16 .div17 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 8.83333rem;
+        min-height: 2.20833rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div16 .div17 .split_text4301 {
+        color: #fff;
+        text-align: center;
+        width: 9.4375rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div16 .div18 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 5.91667rem;
+        min-height: 2.20833rem;
+        margin-left: 2.6875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div16 .div18 .split_text4302 {
+        color: #fff;
+        text-align: center;
+        width: 9.4375rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div19 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 15.75rem;
+        min-height: 2.04167rem;
+        margin-right: .27083rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div19 .div20 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 6.02083rem;
+        min-height: 2.04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div19 .div20 .split_text4303 {
+        color: #fff;
+        text-align: center;
+        width: 9.4375rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div19 .div21 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 5.41667rem;
+        min-height: 2.04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div12 .div19 .div21 .split_text4304 {
+        color: #fff;
+        text-align: center;
+        width: 9.4375rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div22 {
+        z-index: 3;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 12.6667rem;
+        min-height: 2.72917rem;
+        margin-top: -13.8542rem;
+        margin-left: -.16667rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div22 .image23,
+      .div1.fly-birds-page_cd56db7852 .div8 .div22 .image24 {
+        width: 2.72917rem;
+        height: 2.72917rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div25 {
+        z-index: 4;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 12.6875rem;
+        min-height: 2.72917rem;
+        margin-top: 5.60417rem;
+        margin-left: -.14583rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div8 .div25 .image26,
+      .div1.fly-birds-page_cd56db7852 .div8 .div25 .image27 {
+        width: 2.72917rem;
+        height: 2.72917rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div28 {
+        z-index: 15;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.0625rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div28 .image29 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div28 .div30 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 17.5833rem;
+        min-height: 5.8125rem;
+        margin-top: -29.8542rem;
+        margin-left: -.83333rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div28 .div30 .div31 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 14.8333rem;
+        min-height: 2.5rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div28 .div30 .div31 .split_text4298 {
+        color: #fff;
+        width: 16.9583rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div28 .div30 .div32 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 17.5417rem;
+        min-height: 2.54167rem;
+        margin-top: .77083rem;
+        margin-left: .04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div28 .div30 .div32 .split_text4297 {
+        color: #fff;
+        width: 17.9167rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div33 {
+        z-index: 14;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div33 .image34 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div33 .div35 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 16.4375rem;
+        min-height: 8.47917rem;
+        margin-top: -29.8125rem;
+        margin-left: -2.02083rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div33 .div35 .div36 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 14.1458rem;
+        min-height: 4.25rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div33 .div35 .div36 .split_text4296 {
+        color: #fff;
+        width: 15.0625rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div33 .div35 .div37 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 16.3958rem;
+        min-height: 3.70833rem;
+        margin-top: .52083rem;
+        margin-left: .04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div33 .div35 .div37 .split_text4295 {
+        color: #fff;
+        width: 17.1667rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div38 {
+        z-index: 13;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 8.75rem;
+        margin-top: -.16667rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div38 .image39 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 8.75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div38 .div40 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 16.0833rem;
+        min-height: 3.97917rem;
+        margin-top: -6.5625rem;
+        margin-left: .04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div38 .div40 .split_text4294 {
+        color: #fff;
+        text-align: center;
+        width: 17.1875rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div41 {
+        z-index: 12;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.16667rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div41 .image42 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div41 .div43 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 15.8542rem;
+        min-height: 8.35417rem;
+        margin-top: -29.8542rem;
+        margin-left: -2.64583rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div41 .div43 .div44 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 15.6875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div41 .div43 .div44 .split_text4293 {
+        color: #fff;
+        width: 18.5625rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div41 .div43 .div45 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 15.7708rem;
+        min-height: 3.54167rem;
+        margin-top: .8125rem;
+        margin-left: .08333rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div41 .div43 .div45 .split_text4292 {
+        color: #fff;
+        width: 16.4583rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 {
+        z-index: 11;  
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.1875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .image47 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div48 {
+        z-index: 2;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 18.2917rem;
+        margin-top: -29.8542rem;
+        margin-left: -.08333rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div48 .div49 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 18.2917rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div48 .div49 .split_text4291 {
+        color: #fff;
+        width: 18.5417rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div48 .div50 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 16.8958rem;
+        min-height: 2.70833rem;
+        margin-top: .77083rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div48 .div50 .split_text4290 {
+        color: #fff;
+        width: 17.7708rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 14.5833rem;
+        min-height: 11.25rem;
+        margin-top: 4.75rem;
+        margin-left: -.45833rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 .div52 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 11.2708rem;
+        min-height: 3.125rem;
+        margin-left: 3.3125rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 .div52 .image53 {
+        width: 2.375rem;
+        height: 2.95833rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 .div52 .image54 {
+        width: 4.14583rem;
+        height: 2.97917rem;
+        margin-bottom: .14583rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 .div55 {
+        z-index: 1;
+         
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10.7708rem;
+        min-height: 5.64583rem;
+        margin-top: .64583rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 .div55 .image56 {
+        width: 5.20833rem;
+        height: 4.85417rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 .div55 .image57 {
+        width: 4.95833rem;
+        height: 5.14583rem;
+        margin-top: .5rem;
+        margin-left: .60417rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div46 .div51 .image58 {
+        z-index: 0;
+        width: 13.5208rem;
+        height: 6.14583rem;
+        margin-top: -4.3125rem;
+        margin-left: .9375rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 {
+        z-index: 10;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.14583rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .image60 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 {
+        z-index: 3;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 18.1875rem;
+        margin-top: -29.8125rem;
+        margin-left: -.35417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div62 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 14.625rem;
+        margin-right: 3.5625rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div62 .split_text4289 {
+        color: #fff;
+        width: 18.4792rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div63 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 16.2917rem;
+        min-height: 2.70833rem;
+        margin-top: .47917rem;
+        margin-right: 1.8125rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div63 .split_text4288 {
+        color: #fff;
+        width: 16.4375rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div64 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 8.9375rem;
+        margin-top: 6.04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div64 .image66 {
+        z-index: 1;
+        width: 3.27083rem;
+        height: .875rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div64 .split_text4287 {
+        color: #fff;
+        width: 9.29167rem;
+        margin-top: .79167rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div65 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 8.8125rem;
+        min-height: 2.04167rem;
+        margin-top: 1.45833rem;
+        margin-right: .125rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div65 .image67 {
+        z-index: 2;
+        width: 3.27083rem;
+        height: .875rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div59 .div61 .div65 .split_text4286 {
+        color: #fff;
+        width: 9.64583rem;
+        margin-top: .79167rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div68 {
+        z-index: 9;  
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 6.875rem;
+        margin-top: -.16667rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div68 .image69 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 6.875rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div68 .div70 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 13.6042rem;
+        min-height: 2.5rem;
+        margin-top: -5.77083rem;
+        margin-left: .10417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div68 .div70 .split_text4285 {
+        color: #fff;
+        text-align: center;
+        width: 18.9375rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.14583rem;
+        display: flex;
+        position: relative
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .image72 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group {
+        display: flex;
+        position: absolute;
+        top: 19.5833rem;
+        left: 9.95833rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .image80 {
+        z-index: 1;
+        width: .39583rem;
+        height: 5.60417rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .right-info {
+        margin-left: .79167rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div76 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 3.83333rem;
+        min-height: .70833rem;
+        margin-top: -.125rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div76 .split_text4281 {
+        color: #fff;
+        width: 5.66667rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div77 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 5.66667rem;
+        min-height: .54167rem;
+        margin-top: .95833rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div77 .split_text4282 {
+        color: #fff;
+        width: 10.52083rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div78 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 9.83333rem;
+        min-height: .70833rem;
+        margin-top: .95833rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div78 .split_text4283 {
+        color: #fff;
+        width: 11.0625rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div79 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 4.58333rem;
+        min-height: .70833rem;
+        margin-top: 1rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .introduce-group .div79 .split_text4284 {
+        color: #fff;
+        width: 5.8125rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .div73 {
+        z-index: 2;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 18.7083rem;
+        margin-top: -29.8125rem;
+        margin-left: .375rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .div73 .div74 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 18.4792rem;
+        margin-left: -.22917rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .div73 .div74 .split_text4280 {
+        color: #fff;
+        width: 18.8125rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .div73 .div75 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 13.2292rem;
+        min-height: 1.70833rem;
+        margin-top: .47917rem;
+        margin-left: -5.47917rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .div73 .div75 .split_text4279 {
+        color: #fff;
+        width: 16.2917rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div71 .div73 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div81 {
+        z-index: 7;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.1875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div81 .image82 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div81 .div83 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 17.2708rem;
+        min-height: 5.97917rem;
+        margin-top: -29.8542rem;
+        margin-left: -1.27083rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div81 .div83 .div84 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 14.5208rem;
+        min-height: 2.77083rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div81 .div83 .div84 .split_text4278 {
+        color: #fff;
+        width: 18.8958rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div81 .div83 .div85 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 17.1667rem;
+        min-height: 2.70833rem;
+        margin-top: .5rem;
+        margin-left: .10417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div81 .div83 .div85 .split_text4277 {
+        color: #fff;
+        width: 17.7708rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 {
+        z-index: 6;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 22.5rem;
+        height: 39.2917rem;
+        margin-top: -.1875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .image87 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 39.2917rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 {
+        z-index: 2;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 18rem;
+        min-height: 11.6875rem;
+        margin-top: -35.125rem;
+        margin-left: 2.04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div89 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 18rem;
+        min-height: 2.77083rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div89 .split_text4276 {
+        color: #fff;
+        width: 18.25rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div90 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 16.875rem;
+        min-height: 2.70833rem;
+        margin-top: .45833rem;
+        margin-left: .02083rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div90 .split_text4275 {
+        color: #fff;
+        width: 17.7708rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div91 {
+         
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 9.6875rem;
+        min-height: 1.4375rem;
+        margin-top: 4.3125rem;
+        margin-left: .08333rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div91 .div92 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 2.6875rem;
+        min-height: 1.4375rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div91 .div92 .split_text4273 {
+        color: #fff;
+        text-align: center;
+        width: 4.875rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div91 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div91 .div93 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 5.14583rem;
+        min-height: 1.4375rem;
+        margin-left: 1.85417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div88 .div91 .div93 .split_text4274 {
+        color: #fff;
+        text-align: center;
+        width: 6.8125rem;
+        font-size: .75rem;
+        line-height: .75rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div94 {
+        z-index: 3;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 8.4375rem;
+        min-height: 2.72917rem;
+        margin-top: -4.52083rem;
+        margin-left: 2.125rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div86 .div94 .image95,
+      .div1.fly-birds-page_cd56db7852 .div86 .div94 .image96 {
+        width: 2.72917rem;
+        height: 2.72917rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div97 {
+        z-index: 5;
+         
+        background-color: #131f49;
+        background-image: linear-gradient(-34deg, #022650, #132775, #012953);
+        background-repeat: no-repeat;
+        background-size: 118% 118%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 22.5rem;
+        height: 8.25rem;
+        margin-top: -.08333rem;
+        padding-left: 4.29167rem;
+        padding-right: 4.20833rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div97 .div98 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 14rem;
+        min-height: 4.27083rem;
+        margin-top: 2.1875rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div97 .div98 .split_text4272 {
+        color: #fff;
+        text-align: center;
+        width: 15.8542rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 {
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22.5rem;
+        height: 33.9792rem;
+        margin-top: -.10417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .image100 {
+        z-index: 0;
+        width: 22.5rem;
+        height: 33.9792rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 {
+        z-index: 1;
+         
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 18.0208rem;
+        margin-top: -29.8125rem;
+        margin-left: -.4375rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 .div102 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 18.0208rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 .div102 .split_text4271 {
+        color: #fff;
+        width: 18.1875rem;
+        font-size: 1.33333rem;
+        line-height: 1.5rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 .div103 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 16.3125rem;
+        min-height: 5.70833rem;
+        margin-top: .45833rem;
+        margin-left: .04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 .div103 .split_text4270 {
+        color: #fff;
+        width: 16.9375rem;
+        font-size: .75rem;
+        line-height: 1rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 .spacer {
+        flex: 1
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 .div104 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 16.3958rem;
+        min-height: .70833rem;
+        margin-top: 14.7708rem;
+        margin-left: .10417rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div99 .div101 .div104 .split_text4269 {
+        color: #fff;
+        width: 16.9167rem;
+        font-size: .75rem;
+        line-height: .875rem
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div105 {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 20.5417rem;
+        margin-top: 2rem;
+        margin-left: 2.16667rem;
+        padding-bottom: 2.04167rem;
+        display: flex
+      }
+
+      .div1.fly-birds-page_cd56db7852 .div105 .split_text4264,
+      .div1.fly-birds-page_cd56db7852 .div105 .split_text4265,
+      .div1.fly-birds-page_cd56db7852 .div105 .split_text4266 {
+        color: #8f8f8f;
+        font-size: .75rem;
+        line-height: 1.08333rem
+      }
+
+      .f-light {
+        font-weight: 300
+      }
+
+      .f-regular {
+        font-weight: 400
+      }
+
+      .f-medium {
+        font-weight: 500
+      }
+
+      .f-bold {
+        font-weight: 700
+      }
+
+      .xm-button {
+        font-weight: 400 !important
+      }
+
+      .xm-page-area_mobile .root-product__footer {
+        opacity: 0
+      }
+
+      .faq-con .section {
+         
+        color: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 1.04167rem;
+        font-weight: 400;
+        line-height: 1.5;
+        position: relative;
+        overflow: hidden
+      }
+
+      .faq-con .section .xm-text {
+        display: block
+      }
+
+      .faq-con .section .flex-list {
+        justify-content: center;
+        align-items: center;
+        display: flex
+      }
+    }
+
+
+    /* 1. Centraliza e organiza o container principal dos botões (Desktop) */
+    .slider-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      padding: 20px 0;
+      z-index: 10;
+    }
+
+    /* 2. Estiliza os botões mantendo o formato circular moderno */
+    .control-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 54px;
+      height: 54px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: static !important;
+      transform: matrix(1, 0, 0, 1, 0, 0) !important;
+    }
+
+    /* 3. Ajusta os ícones de imagem (img) dentro dos botões */
+    .control-button img {
+      width: 24px;
+      height: auto;
+      pointer-events: none;
+    }
+
+    /* 4. Efeitos de interação (Hover / Active) */
+    .control-button:hover {
+      background-color: #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .control-button:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    /* 5. Destaque para o botão central de Play/Pause */
+    .control-button.center {
+      width: 62px;
+      height: 62px;
+    }
+
+    /* 1. Container Mobile: centralizado e com espaçamento otimizado */
+    .slider-controls-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      padding: 15px 0;
+      z-index: 10;
+    }
+
+    /* 2. Botões Mobile: Tamanho ajustado para o toque */
+    .slider-controls-mobile .control-button,
+    .slider-controls-mobile button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 46px;
+      height: 46px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      -webkit-tap-highlight-color: transparent;
+      transition: all 0.2s ease-out;
+      position: static !important;
+      transform: matrix(1, 0, 0, 1, 0, 0) !important;
+    }
+
+    /* 3. Ajuste do ícone no mobile */
+    .slider-controls-mobile button img {
+      width: 20px;
+      height: auto;
+      pointer-events: none;
+    }
+
+    /* 4. Destaque do botão central no Mobile */
+    .slider-controls-mobile .center-mob,
+    .slider-controls-mobile .center {
+      width: 54px;
+      height: 54px;
+    }
+
+    /* 5. Efeito tátil de toque (Active) no Mobile */
+    .slider-controls-mobile button:active {
+      background-color: #ffffff;
+      transform: scale(0.92);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    }
+  </style>
+</head>
+
+<body>
   <main class="fly-birds-page_49648576b6 div1 desk-prod">
-   <div class="section div2 lazy" data-background-image="" data-fetch-priority="high" data-id="9dgdz0rs1l" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image3">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1feb2e4f2791d5c3d3ce5eacdfc7d4c4.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="l69fvmr3o9" data-key="" data-productname="" fetchpriority="high" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1feb2e4f2791d5c3d3ce5eacdfc7d4c4.jpg"/>
-    </picture>
-    <div class="div4">
-     <picture class="xm-picture image5">
-      <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/img-pc-title.png?f=webp" type="image/webp"/>
-      <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="2l6dd9clnj" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/img-pc-title.png"/>
-     </picture>
-     <div class="div6">
-      <span class="xm-text split_text4263 f-medium" data-id="r7rtmnh2kf" data-key="slogan_1" data-type="text">
-       Barbear inteligente e rápido, sem travar e sem prender os pelos
-      </span>
-     </div>
-     <div class="xm-price price price-color xm-price--wrap" data-id="zan6aywnvw">
-      <p class="xm-price--items">
-       <span class="xm-price__label">
-       </span>
-       <span class="xm-price__sNum">
-       </span>
-      </p>
-      <p class="xm-price--energy">
-      </p>
-     </div>
-    </div>
-   </div>
-   <div class="section div8 lazy" data-background-image="" data-id="kv7i64l2cg" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image9">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/231c5475b442221cbcec691ec8ab1c9b.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img" data-id="bprekcarcw" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/231c5475b442221cbcec691ec8ab1c9b.jpg" tabindex="-1"/>
-    </picture>
-    <div class="div10">
-     <div class="div11">
-      <span class="xm-text split_text4262 f-medium" data-id="uid648eetf" data-key="ksp_1" data-type="text">
-       Lâminas de trilho duplo
-      </span>
-     </div>
-     <div class="div12">
-      <span class="xm-text split_text4261 f-medium" data-id="e0qfzis7ou" data-key="ksp_2" data-type="text">
-       Dois níveis de velocidade ajustáveis
-      </span>
-     </div>
-     <div class="div13">
-      <span class="xm-text split_text4260 f-medium" data-id="zjhgoknh9x" data-key="ksp_3" data-type="text">
-       Cabeças flutuantes de 360° Se ajustam com conforto ao formato do seu rosto
-      </span>
-     </div>
-     <div class="div14">
-      <span class="xm-text split_text4259 f-medium" data-id="gpk1lhco0t" data-key="ksp_4" data-type="text">
-       Controle inteligente de velocidade Evita que os pelos fiquem presos
-      </span>
-     </div>
-     <div class="div15">
-      <span class="xm-text split_text4258 f-medium" data-id="whyb16odq1" data-key="ksp_5" data-type="text">
-       Tela LED inteligente Acompanhe o status em tempo real
-      </span>
-     </div>
-     <div class="div16">
-      <span class="xm-text split_text4257 f-medium" data-id="poo46k3bfy" data-key="ksp_6" data-type="text">
-       Carregamento via Type-C Simples e eficiente
-      </span>
-     </div>
-    </div>
-    <picture class="xm-picture image17">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-0.png?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="k5st4rl2mv" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-0.png"/>
-    </picture>
-    <picture class="xm-picture image18">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-1.png?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="99z2hivtg6" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-1.png"/>
-    </picture>
-    <picture class="xm-picture image19">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-2.png?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="f6btf0hw64" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-2.png"/>
-    </picture>
-    <picture class="xm-picture image20">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-3.png?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="wx4lpu1lhi" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-3.png"/>
-    </picture>
-    <picture class="xm-picture image21">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-4.png?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="lrbv88tcxu" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-4.png"/>
-    </picture>
-    <picture class="xm-picture image22">
-     <source class="" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-5.png?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="8snojrfje0" data-key="" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-5.png"/>
-    </picture>
-   </div>
-   <div class="section div23 lazy" data-background-image="" data-id="eoy7kmj2tu" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image24">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1534395f56ce4ccd93ee0100f25fdfdd.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1534395f56ce4ccd93ee0100f25fdfdd.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="48bnal45ws" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1534395f56ce4ccd93ee0100f25fdfdd.jpg"/>
-    </picture>
-    <div class="div25">
-     <div class="div26">
-      <span class="xm-text split_text4256 f-bold" data-id="391jc8ka73" data-key="overview_1" data-type="text">
-       Lâminas de trilho duplo Barbear mais rápido e mais limpo
-      </span>
-     </div>
-     <div class="div27">
-      <span class="xm-text split_text4255 f-regular" data-id="igu478tswo" data-key="overview_2" data-type="text">
-       As lâminas de trilho duplo aumentam em 50%* a captação de pelos em relação ao modelo de trilho único, deixando o barbear mais rápido.
-      </span>
-     </div>
-    </div>
-   </div>
-   <div class="section div28 lazy" data-background-image="" data-id="9w9kv7y1ar" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image29">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/83b15e850654641ebe8f96f9d2afe9df.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/83b15e850654641ebe8f96f9d2afe9df.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="2slwje331a" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/83b15e850654641ebe8f96f9d2afe9df.jpg"/>
-    </picture>
-    <div class="div30">
-     <div class="div31">
-      <span class="xm-text split_text4254 f-bold" data-id="mpm3vgtq9u" data-key="overview_3" data-type="text">
-       Regulagem inteligente de velocidade Evita travamentos e pelos presos
-      </span>
-     </div>
-     <div class="div32">
-      <span class="xm-text split_text4253 f-regular" data-id="78oke9dfwr" data-key="overview_4" data-type="text">
-       O motor potente vem com um chip de controle inteligente que sente a carga na cabeça do barbeador e ajusta a velocidade automaticamente, garantindo um barbear eficiente e confortável.
-      </span>
-     </div>
-    </div>
-   </div>
-   <div class="section div33 lazy" data-background-image="" data-id="82hko1a7m0" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image34">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy" data-id="8eu7xpjd7t" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg" tabindex="-1"/>
-    </picture>
-    <div class="div35">
-     <span class="xm-text split_text4252 f-bold" data-id="fyeipfqxaj" data-key="overview_5" data-type="text">
-      Lâmina flexível Se adapta totalmente à sua pele para facilitar o barbear
-     </span>
-    </div>
-   </div>
-   <div class="section div36 lazy" data-background-image="" data-id="9jxqjijtga" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image37">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/442d908a3de3aa41a33f9f0e9df17d50.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/442d908a3de3aa41a33f9f0e9df17d50.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="77lp0dnnqt" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/442d908a3de3aa41a33f9f0e9df17d50.jpg"/>
-    </picture>
-    <div class="div38">
-     <div class="div39">
-      <span class="xm-text split_text4251 f-bold" data-id="smzm2b01ej" data-key="overview_6" data-type="text">
-       Lâmina de geometria biônica Se ajusta ao seu rosto para um barbear mais suave
-      </span>
-     </div>
-     <div class="div40">
-      <span class="xm-text split_text4250 f-regular" data-id="lmu51091fm" data-key="overview_7" data-type="text">
-       A lâmina em formato de arraia flutua de forma independente, acompanhando o contorno do seu rosto. O design biônico e aerodinâmico também garante suavidade em toda a área.
-      </span>
-     </div>
-    </div>
-   </div>
-   <div class="section div41 lazy" data-background-image="" data-id="7o9o7u8gi0" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image42">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/6cd88ad085682980499151c34347c77c.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/6cd88ad085682980499151c34347c77c.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="32zq6d00im" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/6cd88ad085682980499151c34347c77c.jpg"/>
-    </picture>
-    <div class="div43">
-     <div class="div44">
-      <span class="xm-text split_text4249 f-bold" data-id="xg7ir68dez" data-key="overview_8" data-type="text">
-       Múltiplas cabeças flutuantes Menos pressão, mais conforto
-      </span>
-     </div>
-     <div class="div45">
-      <span class="xm-text split_text4248 f-regular" data-id="6mad7mw8xk" data-key="overview_9" data-type="text">
-       As cabeças do barbeador flutuam com flexibilidade e reduzem a pressão para pegar os pelos mais difíceis do pescoço e da mandíbula, se ajustando a cada contorno do rosto.
-      </span>
-     </div>
-    </div>
-   </div>
-   <div class="section div46 lazy" data-background-image="" data-id="u2gsn5qj9f" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image47">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/572ca3fcfb68e54f9889dd638de6755c.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/572ca3fcfb68e54f9889dd638de6755c.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="j8wpn0jasj" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/572ca3fcfb68e54f9889dd638de6755c.jpg"/>
-    </picture>
-    <div class="div48">
-     <div class="div49">
-      <span class="xm-text split_text4247 f-bold" data-id="i0wjvggs8s" data-key="overview_10" data-type="text">
-       Dois níveis à sua escolha Se adapta automaticamente a qualquer tipo de barba
-      </span>
-     </div>
-     <div class="div50">
-      <span class="xm-text split_text4246 f-regular" data-id="mpu7ezqpnb" data-key="overview_11" data-type="text">
-       Com o aparelho ligado, mantenha o botão pressionado por 1 segundo para trocar de nível e dar conta de qualquer tipo de barba.
-      </span>
-     </div>
-     <div class="spacer">
-     </div>
-     <div class="div51">
-      <picture class="xm-picture image53">
-       <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/be679513fec108963c488950ca8ee75f.png?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/be679513fec108963c488950ca8ee75f.png?f=webp" type="image/webp"/>
-       <img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy" data-id="8vhlu7wduj" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/be679513fec108963c488950ca8ee75f.png" tabindex="-1"/>
+    <div class="section div2 lazy" data-background-image="" data-fetch-priority="high" data-id="9dgdz0rs1l"
+      data-loaded="true" data-type="bg" role="">
+      <picture class="xm-picture image3">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1feb2e4f2791d5c3d3ce5eacdfc7d4c4.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="l69fvmr3o9" data-key=""
+          data-productname="" fetchpriority="high"
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1feb2e4f2791d5c3d3ce5eacdfc7d4c4.jpg" />
       </picture>
-      <span class="xm-text split_text4245 f-medium" data-id="jzlii9003h" data-key="overview_12" data-type="text">
-       Velocidade inteligente Acelera automaticamente nas áreas mais difíceis
-      </span>
-     </div>
-     <div class="div52">
-      <picture class="xm-picture image54">
-       <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/93e4441f6b02e6dfe6781707060f3550.png?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/93e4441f6b02e6dfe6781707060f3550.png?f=webp" type="image/webp"/>
-       <img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy" data-id="ufqb47jqtj" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/93e4441f6b02e6dfe6781707060f3550.png" tabindex="-1"/>
+      <div class="div4">
+        <picture class="xm-picture image5">
+          <source class=""
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/img-pc-title.png?f=webp"
+            type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="2l6dd9clnj" data-key=""
+            data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/img-pc-title.png" />
+        </picture>
+        <div class="div6"><span class="xm-text split_text4263 f-medium" data-id="r7rtmnh2kf" data-key="slogan_1"
+            data-type="text">Barbear rápido e inteligente. Suavidade em cada passada</span></div>
+        <div class="xm-price price price-color xm-price--wrap" data-id="zan6aywnvw">
+          <p class="xm-price--items"><span class="xm-price__label"></span><span class="xm-price__sNum"></span></p>
+          <p class="xm-price--energy"></p>
+        </div>
+      </div>
+    </div>
+    <div class="section div8 lazy" data-background-image="" data-id="kv7i64l2cg" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image9">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/231c5475b442221cbcec691ec8ab1c9b.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img"
+          data-id="bprekcarcw" data-key="" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/231c5475b442221cbcec691ec8ab1c9b.jpg"
+          tabindex="-1" />
       </picture>
-      <span class="xm-text split_text4244 f-medium" data-id="98kw10v3p1" data-key="overview_13" data-type="text">
-       Velocidade extra Apara barbas grossas por completo e com eficiência
-      </span>
-     </div>
-    </div>
-   </div>
-   <div class="section div55 lazy" data-background-image="" data-id="r9fz47q1v3" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image56">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy" data-id="g5ez5rycft" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg" tabindex="-1"/>
-    </picture>
-    <div class="div57">
-     <span class="xm-text split_text4243 f-bold" data-id="nb2d0il7na" data-key="overview_14" data-type="text">
-      Informações visíveis Acompanhe o status em tempo real
-     </span>
-    </div>
-   </div>
-   <div class="section div58 lazy" data-background-image="" data-id="ltc5ihndau" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image59">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/led.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/led.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="0qqystee7w" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/led.jpg"/>
-    </picture>
-    <picture class="xm-picture image70">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/2f68e8023043017cfbf0f8af41e73ea1.png?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/2f68e8023043017cfbf0f8af41e73ea1.png?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy" data-id="6dcvnv5njg" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/2f68e8023043017cfbf0f8af41e73ea1.png" tabindex="-1"/>
-    </picture>
-    <div class="div63">
-     <div class="div64">
-      <span class="xm-text split_text4240 f-medium" data-id="x6vu00kezl" data-key="overview_17" data-type="text">
-       Velocidade extra
-      </span>
-     </div>
-     <div class="div65">
-      <span class="xm-text split_text4239 f-medium" data-id="n1j1a6lbye" data-key="overview_18" data-type="text">
-       Trava inteligente para viagem
-      </span>
-     </div>
-     <div class="spacer">
-     </div>
-     <div class="div66">
-      <span class="xm-text split_text4238 f-medium" data-id="87cmd909mi" data-key="overview_19" data-type="text">
-       Aviso de limpeza/alerta de erro
-      </span>
-     </div>
-     <div class="div69">
-      <span class="xm-text split_text4237 f-medium" data-id="fhs1m13i5w" data-key="overview_20" data-type="text">
-       Indicador de carga
-      </span>
-     </div>
-    </div>
-    <div class="div60">
-     <div class="div61">
-      <div class="div62">
-       <span class="xm-text split_text4242 f-bold" data-id="8vgv5ngcf0" data-key="overview_15" data-type="text">
-        Tela LED inteligente Monitore o status do barbeador a qualquer momento
-       </span>
+      <div class="div10">
+        <div class="div11"><span class="xm-text split_text4262 f-medium" data-id="uid648eetf" data-key="ksp_1"
+            data-type="text">Lâminas de trilho duplo</span></div>
+        <div class="div12"><span class="xm-text split_text4261 f-medium" data-id="e0qfzis7ou" data-key="ksp_2"
+            data-type="text">Dois níveis de velocidade ajustáveis</span></div>
+        <div class="div13"><span class="xm-text split_text4260 f-medium" data-id="zjhgoknh9x" data-key="ksp_3"
+            data-type="text">Cabeças flutuantes de 360° Se ajustam com conforto ao formato do seu rosto</span></div>
+        <div class="div14"><span class="xm-text split_text4259 f-medium" data-id="gpk1lhco0t" data-key="ksp_4"
+            data-type="text">Controle inteligente de velocidade Evita puxões</span></div>
+        <div class="div15"><span class="xm-text split_text4258 f-medium" data-id="whyb16odq1" data-key="ksp_5"
+            data-type="text">Tela LED inteligente Acompanhe o status em tempo real</span></div>
+        <div class="div16"><span class="xm-text split_text4257 f-medium" data-id="poo46k3bfy" data-key="ksp_6"
+            data-type="text">Carregamento USB-C Simples e eficiente</span></div>
       </div>
-     </div>
-     <div class="div67">
-      <div class="div68">
-       <span class="xm-text split_text4241 f-regular" data-id="rwum98nzqq" data-key="overview_16" data-type="text">
-        A tela inteligente mostra as informações principais num só olhar.
-       </span>
+      <picture class="xm-picture image17">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-0.png?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="k5st4rl2mv" data-key=""
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-0.png" />
+      </picture>
+      <picture class="xm-picture image18">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-1.png?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="99z2hivtg6" data-key=""
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-1.png" />
+      </picture>
+      <picture class="xm-picture image19">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-2.png?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="f6btf0hw64" data-key=""
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-2.png" />
+      </picture>
+      <picture class="xm-picture image20">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-3.png?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="wx4lpu1lhi" data-key=""
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-3.png" />
+      </picture>
+      <picture class="xm-picture image21">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-4.png?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="lrbv88tcxu" data-key=""
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-4.png" />
+      </picture>
+      <picture class="xm-picture image22">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-5.png?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img" data-id="8snojrfje0" data-key=""
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/icon-5.png" />
+      </picture>
+    </div>
+    <div class="section div23 lazy" data-background-image="" data-id="eoy7kmj2tu" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image24">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1534395f56ce4ccd93ee0100f25fdfdd.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="48bnal45ws"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/1534395f56ce4ccd93ee0100f25fdfdd.jpg" />
+      </picture>
+      <div class="div25">
+        <div class="div26"><span class="xm-text split_text4256 f-bold" data-id="391jc8ka73" data-key="overview_1"
+            data-type="text">Lâminas de trilho duplo Barbear mais rápido e mais limpo</span></div>
+        <div class="div27"><span class="xm-text split_text4255 f-regular" data-id="igu478tswo" data-key="overview_2"
+            data-type="text">As lâminas de trilho duplo aumentam em 50%* a captação de pelos em relação ao modelo de
+            trilho único, deixando o barbear mais rápido.</span></div>
       </div>
-     </div>
     </div>
-   </div>
-   <div class="section div71 lazy" data-background-image="" data-id="6ifutzk396" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image72">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/3d709687aa05d3abd7c1f46750854634.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/3d709687aa05d3abd7c1f46750854634.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="ruakggxnr3" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/3d709687aa05d3abd7c1f46750854634.jpg"/>
-    </picture>
-    <div class="div73">
-     <div class="div74">
-      <span class="xm-text split_text4236 f-bold" data-id="9h8oeiyilf" data-key="overview_21" data-type="text">
-       Revestimento anti-impressões digitais Fácil de limpar
-      </span>
-     </div>
-     <div class="div75">
-      <span class="xm-text split_text4235 f-regular" data-id="svlw14kyg2" data-key="overview_22" data-type="text">
-       O revestimento exclusivo proporciona uma sensação confortável e agradável à pele, reduz marcas de dedos e manchas, além de ser fácil de limpar e manter.
-      </span>
-     </div>
-    </div>
-   </div>
-   <div class="section div76 lazy" data-background-image="" data-id="putk6719c0" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image77">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/8f0a37d53b616cb57952c68c8c08d6ca.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/8f0a37d53b616cb57952c68c8c08d6ca.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="8fc9pevb71" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/8f0a37d53b616cb57952c68c8c08d6ca.jpg"/>
-    </picture>
-    <div class="div78">
-     <div class="div79">
-      <span class="xm-text split_text4234 f-bold" data-id="6ksr9l79mr" data-key="overview_23" data-type="text">
-       Fácil de lavar Para uso a seco ou com água
-      </span>
-     </div>
-     <div class="div80">
-      <span class="xm-text split_text4233 f-regular" data-id="k95odpc97h" data-key="overview_24" data-type="text">
-       O corpo com resistência à água IPX7* facilita a limpeza. A cabeça removível permite lavar rapidamente, sem deixar pelos soltos pelo caminho.
-      </span>
-     </div>
-     <div class="spacer">
-     </div>
-     <div class="div81">
-      <div class="div82">
-       <span class="xm-text split_text4232 f-medium" data-id="ipo38hbqae" data-key="overview_25" data-type="text">
-        Lavagem direta
-       </span>
+    <div class="section div28 lazy" data-background-image="" data-id="9w9kv7y1ar" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image29">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/83b15e850654641ebe8f96f9d2afe9df.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="2slwje331a"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/83b15e850654641ebe8f96f9d2afe9df.jpg" />
+      </picture>
+      <div class="div30">
+        <div class="div31"><span class="xm-text split_text4254 f-bold" data-id="mpm3vgtq9u" data-key="overview_3"
+            data-type="text">Regulagem inteligente de velocidade <p>Evita travamentos e pelos presos</p></span></div>
+        <div class="div32"><span class="xm-text split_text4253 f-regular" data-id="78oke9dfwr" data-key="overview_4"
+            data-type="text">O motor potente conta com um chip de controle inteligente que detecta a carga sobre a
+            cabeça do barbeador e ajusta automaticamente a velocidade, proporcionando um barbear eficiente e
+            confortável.</span></div>
       </div>
-      <div class="div83">
-       <span class="xm-text split_text4231 f-medium" data-id="j0czugmact" data-key="overview_26" data-type="text">
-        Uso a seco ou com água
-       </span>
+    </div>
+    <div class="section div33 lazy" data-background-image="" data-id="82hko1a7m0" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image34">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy"
+          data-id="8eu7xpjd7t" data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg"
+          tabindex="-1" />
+      </picture>
+      <div class="div35"><span class="xm-text split_text4252 f-bold" data-id="fyeipfqxaj" data-key="overview_5"
+          data-type="text">Lâmina flexível 
+          <p>Se adapta totalmente à sua pele para facilitar o barbear</p></span></div>
+    </div>
+    <div class="section div36 lazy" data-background-image="" data-id="9jxqjijtga" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image37">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/442d908a3de3aa41a33f9f0e9df17d50.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="77lp0dnnqt"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/442d908a3de3aa41a33f9f0e9df17d50.jpg" />
+      </picture>
+      <div class="div38">
+        <div class="div39"><span class="xm-text split_text4251 f-bold" data-id="smzm2b01ej" data-key="overview_6"
+            data-type="text">Lâmina com design biônico </span></div>
+            <div class="div39"><span class="xm-text split_text4251 f-bold" data-id="smzm2b01ej" data-key="overview_6"
+            data-type="text">Se ajusta ao seu rosto para um barbear mais suave</div>
+        <div class="div40"><span class="xm-text split_text4250 f-regular" data-id="lmu51091fm" data-key="overview_7"
+            data-type="text">Com formato inspirado em uma arraia, a lâmina se movimenta de forma independente e
+            acompanha os contornos do rosto. O design biônico e aerodinâmico proporciona um barbear suave em toda a
+            área.</span></div>
       </div>
-     </div>
     </div>
-    <div class="div84">
-     <picture class="xm-picture image85">
-      <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-0.png?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-0.png?f=webp" type="image/webp"/>
-      <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="0ho95siapa" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-0.png"/>
-     </picture>
-     <picture class="xm-picture image86">
-      <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-1.png?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-1.png?f=webp" type="image/webp"/>
-      <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="5omixqwqfq" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-1.png"/>
-     </picture>
+    <div class="section div41 lazy" data-background-image="" data-id="7o9o7u8gi0" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image42">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/6cd88ad085682980499151c34347c77c.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="32zq6d00im"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/6cd88ad085682980499151c34347c77c.jpg" />
+      </picture>
+      <div class="div43">
+        <div class="div44"><span class="xm-text split_text4249 f-bold" data-id="xg7ir68dez" data-key="overview_8"
+            data-type="text">Múltiplas cabeças flutuantes Menos pressão, mais conforto</span></div>
+        <div class="div45"><span class="xm-text split_text4248 f-regular" data-id="6mad7mw8xk" data-key="overview_9"
+            data-type="text">As cabeças do barbeador se movimentam com flexibilidade, reduzindo a pressão e capturando
+            até os pelos mais difíceis do pescoço e da mandíbula, enquanto se adaptam aos contornos do rosto.</span>
+        </div>
+      </div>
     </div>
-   </div>
-   <div class="section div87 lazy" data-background-image="" data-id="7dxgkr15vl" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image88">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp" srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy" data-id="8t3u8p6izu" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg" tabindex="-1"/>
-    </picture>
-    <div class="div89">
-     <span class="xm-text split_text4230 f-bold" data-id="q08i7evkpi" data-key="overview_27" data-type="text">
-      Viaje sem preocupação Bateria de longa duração para levar aonde for
-     </span>
+    <div class="section div46 lazy" data-background-image="" data-id="u2gsn5qj9f" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image47">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/572ca3fcfb68e54f9889dd638de6755c.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="j8wpn0jasj"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/572ca3fcfb68e54f9889dd638de6755c.jpg" />
+      </picture>
+      <div class="div48">
+        <div class="div49"><span class="xm-text split_text4247 f-bold" data-id="i0wjvggs8s" data-key="overview_10"
+            data-type="text">Dois níveis de velocidade 
+            </span></div> <div class="div49"><span class="xm-text split_text4247 f-bold" data-id="i0wjvggs8s" data-key="overview_10"
+            data-type="text">Se adapta automaticamente a qualquer tipo de barba</div>
+        <div class="div50"><span class="xm-text split_text4246 f-regular" data-id="mpu7ezqpnb" data-key="overview_11"
+            data-type="text">Com o aparelho ligado, mantenha o botão pressionado por 1 segundo para alternar entre os
+            dois níveis, adaptando o barbear a diferentes tipos de barba.</span></div>
+        <div class="spacer"></div>
+        <div class="div51">
+          <picture class="xm-picture image53">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/be679513fec108963c488950ca8ee75f.png?f=webp"
+              type="image/webp" /><img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy"
+              data-id="8vhlu7wduj" data-key="" data-loaded="true" data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/be679513fec108963c488950ca8ee75f.png"
+              tabindex="-1" />
+          </picture><span class="xm-text split_text4245 f-medium" data-id="jzlii9003h" data-key="overview_12"
+            data-type="text">Velocidade inteligente Acelera automaticamente nas áreas mais difíceis</span>
+        </div>
+        <div class="div52">
+          <picture class="xm-picture image54">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/93e4441f6b02e6dfe6781707060f3550.png?f=webp"
+              type="image/webp" /><img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy"
+              data-id="ufqb47jqtj" data-key="" data-loaded="true" data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/93e4441f6b02e6dfe6781707060f3550.png"
+              tabindex="-1" />
+          </picture><span class="xm-text split_text4244 f-medium" data-id="98kw10v3p1" data-key="overview_13"
+            data-type="text">Velocidade extra Apara barbas grossas por completo e com eficiência</span>
+        </div>
+      </div>
     </div>
-   </div>
-   <div class="section div90 lazy" data-background-image="" data-id="o3ae4me6wb" data-loaded="true" data-type="bg" role="">
-    <picture class="xm-picture image91">
-     <source class="lazy" data-loaded="true" data-srcset="https://i02.appmifile.com/421_operator_sg/18/02/2024/e26c4d1da72d84fb43c249c0603220dd.jpg?f=webp" srcset="https://i02.appmifile.com/421_operator_sg/18/02/2024/e26c4d1da72d84fb43c249c0603220dd.jpg?f=webp" type="image/webp"/>
-     <img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="6c4gi4ee3d" data-key="" data-loaded="true" data-productname="" src="https://i02.appmifile.com/421_operator_sg/18/02/2024/e26c4d1da72d84fb43c249c0603220dd.jpg"/>
-    </picture>
-    <div class="div92">
-     <div class="div93">
-      <span class="xm-text split_text4229 f-bold" data-id="7jwjro5x66" data-key="overview_28" data-type="text">
-       Conector universal Até 90 dias* de autonomia
-      </span>
-     </div>
-     <div class="div94">
-      <span class="xm-text split_text4228 f-regular" data-id="chg4o73v6r" data-key="overview_29" data-type="text">
-       O conector universal Type-C garante compatibilidade com smartphones, computadores, carregadores portáteis e outros dispositivos. A carga completa leva 2 horas* e a bateria dura até 90 dias*, ideal para viajar sem preocupação.
-      </span>
-     </div>
-     <div class="spacer">
-     </div>
-     <div class="div95">
-      <span class="xm-text split_text4227 f-light" data-id="vsihj575sz" data-key="overview_30" data-type="text">
-       *Considerando 1 minuto de uso diário após a carga completa.
-      </span>
-     </div>
+    <div class="section div55 lazy" data-background-image="" data-id="r9fz47q1v3" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image56">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy"
+          data-id="g5ez5rycft" data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg"
+          tabindex="-1" />
+      </picture>
+      <div class="div57"><span class="xm-text split_text4243 f-bold" data-id="nb2d0il7na" data-key="overview_14"
+          data-type="text">Informações sempre visíveis <p></p>Acompanhe o status em tempo real</span></div>
     </div>
-   </div>
-   <div class="section div96 lazy" data-background-image="" data-id="4almqnrzue" data-loaded="true" data-type="bg" role="">
-    <span class="xm-text split_text4224 f-light" data-id="fuz2e8lroy" data-key="note_1" data-type="text">
-     *50%: aumento de 50% na captação de pelos das lâminas de trilho duplo em comparação com a lâmina de trilho único interno.
-    </span>
-    <span class="xm-text split_text4225 f-light" data-id="12x28g7juw" data-key="note_2" data-type="text">
-     *O produto foi testado e certificado como resistente a respingos e água em condições específicas de laboratório, com classificação de proteção IPX7 conforme a norma IEC 60529. Testado pela EMTEK (Dongguan) Co., Ltd. Relatório nº EDG2206150074R00501R.
-    </span>
-    <span class="xm-text split_text4226 f-light" data-id="r8blpywyw5" data-key="note_3" data-type="text">
-     *Carga completa em 2 horas: tempo obtido usando um carregador com saída nominal de 5V⎓1A.
-    </span>
-   </div>
+    <div class="section div58 lazy" data-background-image="" data-id="ltc5ihndau" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image59">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/led.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="0qqystee7w"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/led.jpg" />
+      </picture>
+      <picture class="xm-picture image70">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/2f68e8023043017cfbf0f8af41e73ea1.png?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy"
+          data-id="6dcvnv5njg" data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/2f68e8023043017cfbf0f8af41e73ea1.png"
+          tabindex="-1" />
+      </picture>
+      <div class="div63">
+        <div class="div64"><span class="xm-text split_text4240 f-medium" data-id="x6vu00kezl" data-key="overview_17"
+            data-type="text">Velocidade extra</span></div>
+        <div class="div65"><span class="xm-text split_text4239 f-medium" data-id="n1j1a6lbye" data-key="overview_18"
+            data-type="text">Trava inteligente para viagem</span></div>
+        <div class="spacer"></div>
+        <div class="div66"><span class="xm-text split_text4238 f-medium" data-id="87cmd909mi" data-key="overview_19"
+            data-type="text">Lembrete de limpeza/alerta de erro</span></div>
+        <div class="div69"><span class="xm-text split_text4237 f-medium" data-id="fhs1m13i5w" data-key="overview_20"
+            data-type="text">Indicador de bateria</span></div>
+      </div>
+      <div class="div60">
+        <div class="div61">
+          <div class="div62"><span class="xm-text split_text4242 f-bold" data-id="8vgv5ngcf0" data-key="overview_15"
+              data-type="text">Tela LED inteligente <p></p>Monitore o status do barbeador a qualquer momento</span></div>
+        </div>
+        <div class="div67">
+          <div class="div68"><span class="xm-text split_text4241 f-regular" data-id="rwum98nzqq" data-key="overview_16"
+              data-type="text">Tenha as informações essenciais sempre à vista.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="section div71 lazy" data-background-image="" data-id="6ifutzk396" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image72">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/3d709687aa05d3abd7c1f46750854634.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="ruakggxnr3"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/3d709687aa05d3abd7c1f46750854634.jpg" />
+      </picture>
+      <div class="div73">
+        <div class="div74"><span class="xm-text split_text4236 f-bold" data-id="9h8oeiyilf" data-key="overview_21"
+            data-type="text">Revestimento anti-impressões digitais <p></p>Fácil de limpar</span></div>
+        <div class="div75"><span class="xm-text split_text4235 f-regular" data-id="svlw14kyg2" data-key="overview_22"
+            data-type="text">O revestimento exclusivo proporciona uma sensação confortável e agradável à pele, reduz
+            marcas de dedos e manchas, além de ser fácil de limpar e manter.</span></div>
+      </div>
+    </div>
+    <div class="section div76 lazy" data-background-image="" data-id="putk6719c0" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image77">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/8f0a37d53b616cb57952c68c8c08d6ca.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="8fc9pevb71"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/8f0a37d53b616cb57952c68c8c08d6ca.jpg" />
+      </picture>
+      <div class="div78">
+        <div class="div79"><span class="xm-text split_text4234 f-bold" data-id="6ksr9l79mr" data-key="overview_23"
+            data-type="text">Fácil de lavar <p></p>Para uso a seco ou com água</span></div>
+        <div class="div80"><span class="xm-text split_text4233 f-regular" data-id="k95odpc97h" data-key="overview_24"
+            data-type="text">O corpo com resistência à água IPX7* facilita a limpeza. A cabeça removível permite lavar
+            rapidamente, sem deixar pelos soltos pelo caminho.</span></div>
+        <div class="spacer"></div>
+        <div class="div81">
+          <div class="div82"><span class="xm-text split_text4232 f-medium" data-id="ipo38hbqae" data-key="overview_25"
+              data-type="text">Lavagem direta</span></div>
+          <div class="div83"><span class="xm-text split_text4231 f-medium" data-id="j0czugmact" data-key="overview_26"
+              data-type="text">Uso a seco ou com água</span></div>
+        </div>
+      </div>
+      <div class="div84">
+        <picture class="xm-picture image85">
+          <source class="lazy" data-loaded="true"
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-0.png?f=webp"
+            type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="0ho95siapa"
+            data-key="" data-loaded="true" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-0.png" />
+        </picture>
+        <picture class="xm-picture image86">
+          <source class="lazy" data-loaded="true"
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-1.png?f=webp"
+            type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="5omixqwqfq"
+            data-key="" data-loaded="true" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/wash-icon-1.png" />
+        </picture>
+      </div>
+    </div>
+    <div class="section div87 lazy" data-background-image="" data-id="7dxgkr15vl" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image88">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" aria-hidden="true" class="xm-img lazy"
+          data-id="8t3u8p6izu" data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/pc/4437cf5b9eb8b7c7a5c7d6f40e0ebd62.jpg"
+          tabindex="-1" />
+      </picture>
+      <div class="div89"><span class="xm-text split_text4230 f-bold" data-id="q08i7evkpi" data-key="overview_27"
+          data-type="text">Viaje sem preocupações <p></p>Bateria de longa duração para levar aonde for</span></div>
+    </div>
+    <div class="section div90 lazy" data-background-image="" data-id="o3ae4me6wb" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image91">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/421_operator_sg/18/02/2024/e26c4d1da72d84fb43c249c0603220dd.jpg?f=webp"
+          type="image/webp" /><img alt="Xiaomi Electric Shaver S301" class="xm-img lazy" data-id="6c4gi4ee3d"
+          data-key="" data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/421_operator_sg/18/02/2024/e26c4d1da72d84fb43c249c0603220dd.jpg" />
+      </picture>
+      <div class="div92">
+        <div class="div93"><span class="xm-text split_text4229 f-bold" data-id="7jwjro5x66" data-key="overview_28"
+            data-type="text">Conector universal <p></p>Até 90 dias* de autonomia</span></div>
+        <div class="div94"><span class="xm-text split_text4228 f-regular" data-id="chg4o73v6r" data-key="overview_29"
+            data-type="text">O conector universal Type-C garante compatibilidade com smartphones, computadores,
+            carregadores portáteis e outros dispositivos. A carga completa leva 2 horas* e a bateria dura até 90 dias*,
+            ideal para viajar sem preocupação.</span></div>
+        <div class="spacer"></div>
+        <div class="div95"><span class="xm-text split_text4227 f-light" data-id="vsihj575sz" data-key="overview_30"
+            data-type="text">*Considerando 1 minuto de uso diário após a carga completa.</span></div>
+      </div>
+    </div>
+    <div class="section div96 lazy" data-background-image="" data-id="4almqnrzue" data-loaded="true" data-type="bg"
+      role=""><span class="xm-text split_text4224 f-light" data-id="fuz2e8lroy" data-key="note_1" data-type="text">*50%:
+        aumento de 50% na captação de pelos das lâminas de trilho duplo em comparação com a lâmina de trilho único
+        interno.</span><span class="xm-text split_text4225 f-light" data-id="12x28g7juw" data-key="note_2"
+        data-type="text">*O produto foi testado e certificado como resistente a respingos e água em condições
+        específicas de laboratório, com classificação de proteção IPX7 conforme a norma IEC 60529. Testado pela EMTEK
+        (Dongguan) Co., Ltd. Relatório nº EDG2206150074R00501R.</span><span class="xm-text split_text4226 f-light"
+        data-id="r8blpywyw5" data-key="note_3" data-type="text">*Carga completa em 2 horas: tempo obtido usando um
+        carregador com saída nominal de 5V⎓1A.</span></div>
   </main>
- </body>
+  <main class="fly-birds-page_cd56db7852 div1 mob-prod">
+    <div class="section div2 lazy mi-bg-color" data-background-image="" data-fetch-priority="high" data-id="h7mqznxt3i"
+      data-loaded="true" data-type="bg" role="">
+      <picture class="xm-picture image3">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/451618a148cd9e0b92bf8a0e35057b63.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img" data-id="vlw4jyid85" data-key="" data-productname=""
+          fetchpriority="high"
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/451618a148cd9e0b92bf8a0e35057b63.jpg" />
+      </picture>
+      <div class="div4">
+        <picture class="xm-picture image5">
+          <source class=""
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/img-m-title.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img" data-id="d5x81473n1" data-key="" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/img-m-title.png" />
+        </picture>
+        <div class="div6"><span class="xm-text split_text4305 f-medium" data-id="d63llus8i7" data-key="slogan_1"
+            data-type="text">Barbear rápido e inteligente. Suavidade em cada passada</span></div>
+      </div>
+    </div>
+    <div class="section div8 lazy" data-background-image="" data-id="6ou3lkky8r" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image9">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-bg.jpg?f=webp"
+          type="image/webp" /><img alt="" aria-hidden="true" class="xm-img" data-id="dv9hy7okw9" data-key=""
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-bg.jpg"
+          tabindex="-1" />
+      </picture>
+      <picture class="xm-picture image10">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-0.png?f=webp"
+          type="image/webp" /><img alt="" class="xm-img" data-id="rx2jkvg0mm" data-key="" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-0.png" />
+      </picture>
+      <picture class="xm-picture image11">
+        <source class=""
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-1.png?f=webp"
+          type="image/webp" /><img alt="" class="xm-img" data-id="cbq0tu7pfo" data-key="" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-1.png" />
+      </picture>
+      <div class="div12">
+        <div class="div13">
+          <div class="div14"><span class="xm-text split_text4299 f-medium" data-id="fw775maorj" data-key="ksp_1"
+              data-type="text">Lâminas de trilho duplo</span></div>
+          <div class="div15"><span class="xm-text split_text4300 f-medium" data-id="xsgwbyquv8" data-key="ksp_2"
+              data-type="text">Dois níveis de velocidade ajustáveis</span></div>
+        </div>
+        <div class="div16">
+          <div class="div17"><span class="xm-text split_text4301 f-medium" data-id="ly1yrgvqxh" data-key="ksp_3"
+              data-type="text">Cabeças flutuantes de 360° Se ajustam com conforto ao formato do seu rosto</span></div>
+          <div class="div18"><span class="xm-text split_text4302 f-medium" data-id="2gydg9ehce" data-key="ksp_4"
+              data-type="text">Controle inteligente de velocidade Evita puxões</span></div>
+        </div>
+        <div class="div19">
+          <div class="div20"><span class="xm-text split_text4303 f-medium" data-id="jci14vfbhp" data-key="ksp_5"
+              data-type="text">Tela LED inteligente Acompanhe o status em tempo real</span></div>
+          <div class="div21"><span class="xm-text split_text4304 f-medium" data-id="a797m91hw0" data-key="ksp_6"
+              data-type="text">Carregamento USB-C Simples e eficiente</span></div>
+        </div>
+      </div>
+      <div class="div22">
+        <picture class="xm-picture image23">
+          <source class=""
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-2.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img" data-id="q4wk8upvnd" data-key="" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-2.png" />
+        </picture>
+        <picture class="xm-picture image24">
+          <source class=""
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-3.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img" data-id="o6dx6s7974" data-key="" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-3.png" />
+        </picture>
+      </div>
+      <div class="div25">
+        <picture class="xm-picture image26">
+          <source class=""
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-4.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img" data-id="7prplkpr3e" data-key="" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-4.png" />
+        </picture>
+        <picture class="xm-picture image27">
+          <source class=""
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-5.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img" data-id="6ajpc71clu" data-key="" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-icon-5.png" />
+        </picture>
+      </div>
+    </div>
+    <div class="section div28 lazy" data-background-image="" data-id="glua58au21" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image29">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/foils.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="3jv3yykkrh" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/foils.jpg" />
+      </picture>
+      <div class="div30">
+        <div class="div31"><span class="xm-text split_text4298 f-bold" data-id="9z119xw337" data-key="overview_1"
+            data-type="text">Lâminas de trilho duplo Barbear mais rápido e mais limpo</span></div>
+        <div class="div32"><span class="xm-text split_text4297 f-regular" data-id="s5lhdofndm" data-key="overview_2"
+            data-type="text">As lâminas de trilho duplo aumentam em 50%* a captação de pelos em relação ao modelo de
+            trilho único, deixando o barbear mais rápido.</span></div>
+      </div>
+    </div>
+    <div class="section div33 lazy" data-background-image="" data-id="fs77ja8t45" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image34">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/94_operator_sg/07/08/2023/8a7fd1197d7fb979ef40ccb68fb413f7.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="4wa75mmzfh" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/94_operator_sg/07/08/2023/8a7fd1197d7fb979ef40ccb68fb413f7.jpg" />
+      </picture>
+      <div class="div35">
+        <div class="div36"><span class="xm-text split_text4296 f-bold" data-id="8xuju57m3c" data-key="overview_3"
+            data-type="text">Regulagem inteligente de velocidade <p>Evita travamentos e pelos presos</p></span></div>
+        <div class="div37"><span class="xm-text split_text4295 f-regular" data-id="6u26dvw028" data-key="overview_4"
+            data-type="text">O motor potente conta com um chip de controle inteligente que detecta a carga sobre a
+            cabeça do barbeador e ajusta automaticamente a velocidade, proporcionando um barbear eficiente e
+            confortável.</span></div>
+      </div>
+    </div>
+    <div class="section div38 lazy" data-background-image="" data-id="x7zc3l6i9r" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image39">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/blade.jpg?f=webp"
+          type="image/webp" /><img alt="" aria-hidden="true" class="xm-img lazy" data-id="2c5now92mh" data-key=""
+          data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/blade.jpg"
+          tabindex="-1" />
+      </picture>
+      <div class="div40"><span class="xm-text split_text4294 f-bold" data-id="3l3gzfeg4r" data-key="overview_5"
+          data-type="text">Lâmina flexível <p>Se adapta totalmente à sua pele para facilitar o barbear</p></span></div>
+    </div>
+    <div class="section div41 lazy" data-background-image="" data-id="yvnvadhtq4" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image42">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/bionic.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="0u5tyb4s3h" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/bionic.jpg" />
+      </picture>
+      <div class="div43">
+        <div class="div44"><span class="xm-text split_text4293 f-bold" data-id="plgwvsjua9" data-key="overview_6"
+            data-type="text">Lâmina com design biônico</span></div>
+            <div class="div44"><span class="xm-text split_text4293 f-bold" data-id="plgwvsjua9" data-key="overview_6"
+            data-type="text">Se ajusta ao seu rosto para um barbear mais suave</span></div>
+            
+        <div class="div45"><span class="xm-text split_text4292 f-regular" data-id="tv96ibh1s2" data-key="overview_7"
+            data-type="text">Com formato inspirado em uma arraia, a lâmina se movimenta de forma independente e
+            acompanha os contornos do rosto. O design biônico e aerodinâmico proporciona um barbear suave em toda a
+            área.</span></div>
+      </div>
+    </div>
+    <div class="section div46 lazy" data-background-image="" data-id="mlzg8n4l1n" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image47">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-heads.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="qbkijbvfmf" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-heads.jpg" />
+      </picture>
+      <div class="div48">
+        <div class="div49"><span class="xm-text split_text4291 f-bold" data-id="su6rbb4vcy" data-key="overview_8"
+            data-type="text">Múltiplas cabeças flutuantes Menos pressão, mais conforto</span></div>
+        <div class="div50"><span class="xm-text split_text4290 f-regular" data-id="iw2a8hyiyd" data-key="overview_9"
+            data-type="text">As cabeças do barbeador se movimentam com flexibilidade, reduzindo a pressão e capturando
+            até os pelos mais difíceis do pescoço e da mandíbula, enquanto se adaptam aos contornos do rosto.</span>
+        </div>
+      </div>
+      <div class="div51">
+        <div class="div52">
+          <picture class="xm-picture image53">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/6aef6cc8ead32b0cb3b0e5076ddeb03a.png?f=webp"
+              type="image/webp" /><img alt="" class="xm-img lazy" data-id="2vsk9ru9qc" data-key="" data-loaded="true"
+              data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/6aef6cc8ead32b0cb3b0e5076ddeb03a.png" />
+          </picture>
+          <picture class="xm-picture image54">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/4303e376eac449001660c62f47503339.png?f=webp"
+              type="image/webp" /><img alt="" class="xm-img lazy" data-id="pve74v797o" data-key="" data-loaded="true"
+              data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/4303e376eac449001660c62f47503339.png" />
+          </picture>
+        </div>
+        <div class="div55">
+          <picture class="xm-picture image56">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/heads-top-arrow.png?f=webp"
+              type="image/webp" /><img alt="" class="xm-img lazy" data-id="z2api82ifp" data-key="" data-loaded="true"
+              data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/heads-top-arrow.png" />
+          </picture>
+          <picture class="xm-picture image57">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/ce485fce250d535956f583b85a17f4b2.png?f=webp"
+              type="image/webp" /><img alt="" class="xm-img lazy" data-id="3y8be0fmvj" data-key="" data-loaded="true"
+              data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/ce485fce250d535956f583b85a17f4b2.png" />
+          </picture>
+        </div>
+        <picture class="xm-picture image58">
+          <source class="lazy" data-loaded="true"
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/heads-bot-arrow.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img lazy" data-id="sdvj18cddm" data-key="" data-loaded="true"
+            data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/heads-bot-arrow.png" />
+        </picture>
+      </div>
+    </div>
+    <div class="section div59 lazy" data-background-image="" data-id="5denup7bj7" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image60">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/levels.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="1fsn3v81h1" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/levels.jpg" />
+      </picture>
+      <div class="div61">
+        <div class="div62"><span class="xm-text split_text4289 f-bold" data-id="yk0yw6xfg8" data-key="overview_10"
+            data-type="text">Dois níveis de velocidade <p>Se adapta automaticamente a qualquer tipo de barba</p></span></div>
+        <div class="div63"><span class="xm-text split_text4288 f-regular" data-id="6cxatm9dp1" data-key="overview_11"
+            data-type="text">Com o aparelho ligado, mantenha o botão pressionado por 1 segundo para alternar entre os
+            dois níveis, adaptando o barbear a diferentes tipos de barba.</span></div>
+        <div class="spacer"></div>
+        <div class="div64">
+          <picture class="xm-picture image66">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/be679513fec108963c488950ca8ee75f.png?f=webp"
+              type="image/webp" /><img alt="" aria-hidden="true" class="xm-img lazy" data-id="ly06ghm4qg" data-key=""
+              data-loaded="true" data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/be679513fec108963c488950ca8ee75f.png"
+              tabindex="-1" />
+          </picture><span class="xm-text split_text4287 f-medium" data-id="fok1av8g4f" data-key="overview_12"
+            data-type="text">Velocidade inteligente Acelera automaticamente nas áreas mais difíceis</span>
+        </div>
+        <div class="div65">
+          <picture class="xm-picture image67">
+            <source class="lazy" data-loaded="true"
+              srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/e1916b51bfb7a5db9f8c1bc7f41e8e43.png?f=webp"
+              type="image/webp" /><img alt="" aria-hidden="true" class="xm-img lazy" data-id="of1amlo7ci" data-key=""
+              data-loaded="true" data-productname=""
+              src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/e1916b51bfb7a5db9f8c1bc7f41e8e43.png"
+              tabindex="-1" />
+          </picture><span class="xm-text split_text4286 f-medium" data-id="2b3ce1e1qg" data-key="overview_13"
+            data-type="text">Velocidade extra Apara barbas grossas por completo e com eficiência</span>
+        </div>
+      </div>
+    </div>
+    <div class="section div68 lazy" data-background-image="" data-id="ixt7yl94np" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image69">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/eb9e6870031bfe572af748918ee3cccc.jpg?f=webp"
+          type="image/webp" /><img alt="" aria-hidden="true" class="xm-img lazy" data-id="xd3u21cbv1" data-key=""
+          data-loaded="true" data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/eb9e6870031bfe572af748918ee3cccc.jpg"
+          tabindex="-1" />
+      </picture>
+      <div class="div70"><span class="xm-text split_text4285 f-bold" data-id="qpp4rlcqnj" data-key="overview_14"
+          data-type="text">Informações sempre visíveis <p>Acompanhe o status em tempo real</p></span></div>
+    </div>
+    <div class="section div71 lazy" data-background-image="" data-id="r67lbki1uu" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image72">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/28b2d347456fe71f64abdf90bb780aed.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="wugyqbtk1k" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/28b2d347456fe71f64abdf90bb780aed.jpg" />
+      </picture>
+      <div class="introduce-group">
+        <picture class="xm-picture image80">
+          <source class="lazy" data-loaded="true"
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/6e020ca84e6cc9923507978f77151d82.png?f=webp"
+            type="image/webp" /><img alt="" aria-hidden="true" class="xm-img lazy" data-id="r06ujlcewv" data-key=""
+            data-loaded="true" data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/6e020ca84e6cc9923507978f77151d82.png"
+            tabindex="-1" />
+        </picture>
+        <div class="right-info">
+          <div class="div76"><span class="xm-text split_text4281 f-medium" data-id="ykt8tqnh9r" data-key="overview_17"
+              data-type="text">Velocidade extra</span></div>
+          <div class="div77"><span class="xm-text split_text4282 f-medium" data-id="ajwfms3eqt" data-key="overview_18"
+              data-type="text">Trava inteligente para viagem</span></div>
+          <div class="div78"><span class="xm-text split_text4283 f-medium" data-id="0zc2j7k2nv" data-key="overview_19"
+              data-type="text">Lembrete de limpeza/alerta de erro</span></div>
+          <div class="div79"><span class="xm-text split_text4284 f-medium" data-id="rn3b5dmcx8" data-key="overview_20"
+              data-type="text">Indicador de bateria</span></div>
+        </div>
+      </div>
+      <div class="div73">
+        <div class="div74"><span class="xm-text split_text4280 f-bold" data-id="7z37b6ftpl" data-key="overview_15"
+            data-type="text">Tela LED inteligente <p></p>Monitore o status do barbeador a qualquer momento</span></div>
+        <div class="div75"><span class="xm-text split_text4279 f-regular" data-id="t0x9vfl7ty" data-key="overview_16"
+            data-type="text">Tenha as informações essenciais sempre à vista.</span></div>
+        <div class="spacer"></div>
+      </div>
+    </div>
+    <div class="section div81 lazy" data-background-image="" data-id="ptxqaei7y3" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image82">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/coating.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="xcxivlxr1f" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/coating.jpg" />
+      </picture>
+      <div class="div83">
+        <div class="div84"><span class="xm-text split_text4278 f-bold" data-id="11zopspyq2" data-key="overview_21"
+            data-type="text">Revestimento anti-impressões digitais Fácil de limpar</span></div>
+        <div class="div85"><span class="xm-text split_text4277 f-regular" data-id="2u74bf7d2q" data-key="overview_22"
+            data-type="text">O revestimento exclusivo proporciona uma sensação confortável e agradável à pele, reduz
+            marcas de dedos e manchas, além de ser fácil de limpar e manter.</span></div>
+      </div>
+    </div>
+    <div class="section div86 lazy" data-background-image="" data-id="c1euez7bk5" data-loaded="true" data-type="bg"
+      role="">
+      <picture class="xm-picture image87">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/wash.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="wtymffxeiz" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/wash.jpg" />
+      </picture>
+      <div class="div88">
+        <div class="div89"><span class="xm-text split_text4276 f-bold" data-id="fmba5ghdjp" data-key="overview_23"
+            data-type="text">Fácil de lavar <p></p>Para uso a seco ou com água</span></div>
+        <div class="div90"><span class="xm-text split_text4275 f-regular" data-id="8o97df5v7n" data-key="overview_24"
+            data-type="text">O corpo com resistência à água IPX7* facilita a limpeza. A cabeça removível permite lavar
+            rapidamente, sem deixar pelos soltos pelo caminho.</span></div>
+        <div class="spacer"></div>
+        <div class="div91">
+          <div class="div92"><span class="xm-text split_text4273 f-regular" data-id="8hufbxut81" data-key="overview_25"
+              data-type="text">Lavagem direta</span></div>
+          <div class="spacer"></div>
+          <div class="div93"><span class="xm-text split_text4274 f-regular" data-id="0ik8kzuhgu" data-key="overview_26"
+              data-type="text">Uso a seco ou com água</span></div>
+        </div>
+      </div>
+      <div class="div94">
+        <picture class="xm-picture image95">
+          <source class="lazy" data-loaded="true"
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-wash-icon-0.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img lazy" data-id="8pm4lovqaj" data-key="" data-loaded="true"
+            data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-wash-icon-0.png" />
+        </picture>
+        <picture class="xm-picture image96">
+          <source class="lazy" data-loaded="true"
+            srcset="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-wash-icon-1.png?f=webp"
+            type="image/webp" /><img alt="" class="xm-img lazy" data-id="gt15ha91pn" data-key="" data-loaded="true"
+            data-productname=""
+            src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-shaver-s301/m/m-wash-icon-1.png" />
+        </picture>
+      </div>
+    </div>
+    <div class="section div97 lazy" data-background-image="" data-id="1550p6tbma" data-loaded="true" data-type="bg"
+      role="">
+      <div class="div98"><span class="xm-text split_text4272 f-bold" data-id="kv4p6oe0r4" data-key="overview_27"
+          data-type="text">Viaje sem preocupações Bateria de longa duração para levar aonde for</span></div>
+    </div>
+    <div class="section div99 lazy" data-id="198g7outuq" data-loaded="true" data-type="bg" role=""
+      style="background-image: url('https://i02.appmifile.com/141_operator_sg/18/02/2024/151e8325ef8dd46a839fd1547b382546.jpg?f=webp'); background-image:url(https://i02.appmifile.com/141_operator_sg/18/02/2024/151e8325ef8dd46a839fd1547b382546.jpg?f=webp)">
+      <picture class="xm-picture image100">
+        <source class="lazy" data-loaded="true"
+          srcset="https://i02.appmifile.com/419_operator_sg/18/02/2024/3c8ace5163d0b9db5f6d01f50691d988.jpg?f=webp"
+          type="image/webp" /><img alt="" class="xm-img lazy" data-id="33y3zh8mdt" data-key="" data-loaded="true"
+          data-productname=""
+          src="https://i02.appmifile.com/419_operator_sg/18/02/2024/3c8ace5163d0b9db5f6d01f50691d988.jpg" />
+      </picture>
+      <div class="div101">
+        <div class="div102"><span class="xm-text split_text4271 f-bold" data-id="updayak7nh" data-key="overview_28"
+            data-type="text">Conector universal <p></p>Até 90 dias* de autonomia</span></div>
+        <div class="div103"><span class="xm-text split_text4270 f-regular" data-id="zbalhg1vg3" data-key="overview_29"
+            data-type="text">O conector universal Type-C garante compatibilidade com smartphones, computadores,
+            carregadores portáteis e outros dispositivos. A carga completa leva 2 horas* e a bateria dura até 90 dias*,
+            ideal para viajar sem preocupação.</span></div>
+        <div class="spacer"></div>
+        <div class="div104"><span class="xm-text split_text4269 f-light" data-id="aotf48ubpe" data-key="overview_30"
+            data-type="text">*Considerando 1 minuto de uso diário após a carga completa.</span></div>
+      </div>
+    </div>
+    <div class="section div105 lazy" data-background-image="" data-id="nn37b2oz80" data-loaded="true" data-type="bg"
+      role=""><span class="xm-text split_text4264 f-light" data-id="87mqhfbp0w" data-key="note_1" data-type="text">*50%:
+        aumento de 50% na captação de pelos das lâminas de trilho duplo em comparação com a lâmina de trilho único
+        interno.</span><span class="xm-text split_text4265 f-light" data-id="8388gns465" data-key="note_2"
+        data-type="text">*O produto foi testado e certificado como resistente a respingos e água em condições
+        específicas de laboratório, com classificação de proteção IPX7 conforme a norma IEC 60529. Testado pela EMTEK
+        (Dongguan) Co., Ltd. Relatório nº EDG2206150074R00501R.</span><span class="xm-text split_text4266 f-light"
+        data-id="y1lduo5llz" data-key="note_3" data-type="text">*Carga completa em 2 horas: tempo obtido usando um
+        carregador com saída nominal de 5V⎓1A.</span></div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Script de Funcionalidade dos Slides -->
+  <script>
+    $(document).ready(function () {
+      // Mapeia e inicializa todos os sliders da página
+      $('.slick-slider').each(function () {
+        var $slider = $(this);
+        var $container = $slider.parent(); // Container que engloba os botões de controle
+
+        // 1. Extrair os slides originais do HTML estático (ignorando os clones)
+        var slidesHtml = [];
+        $slider.find('.slick-slide:not(.slick-cloned)').each(function () {
+          slidesHtml.push($(this).html());
+        });
+
+        // 2. Limpar a estrutura travada do slider
+        $slider.removeClass('slick-initialized').empty();
+
+        // 3. Reinserir os slides de forma limpa para o plugin
+        $.each(slidesHtml, function (index, html) {
+          $slider.append('<div>' + html + '</div>');
+        });
+
+        // 4. Encontrar os botões de controle customizados (Desktop e Mobile)
+        var $leftBtn = $container.find('.left, .left-mob');
+        var $rightBtn = $container.find('.right, .right-mob');
+        var $centerBtn = $container.find('.center, .center-mob');
+
+        // Exibir os botões que estão com "display: none" no CSS inline original
+        $leftBtn.show();
+        $rightBtn.show();
+        $centerBtn.show();
+
+        // 5. Inicializar o Slick Carousel com autoplay contínuo
+        $slider.slick({
+          fade: true,
+          infinite: true,
+
+          // --- CONFIGURAÇÕES DE AUTOPLAY AUTOMÁTICO ---
+          autoplay: true,         // Ativa a passagem automática
+          autoplaySpeed: 3000,    // Tempo que o slide fica na tela (3000 = 3 segundos)
+          speed: 500,             // Velocidade da transição/animação (500 = 0.5 segundos)
+          pauseOnHover: false,    // NÃO pausa quando o usuário passa o mouse por cima
+          pauseOnFocus: false,    // NÃO pausa quando o usuário clica ou interage com o slider
+          // --------------------------------------------
+
+          arrows: true,
+          prevArrow: $leftBtn,
+          nextArrow: $rightBtn,
+          dots: false // O HTML não apresenta os pontos nativos ativados
+        });
+
+        // 6. Lógica de animação do botão Play/Pause customizado
+        $centerBtn.off('click').on('click', function () {
+          var $btn = $(this);
+          if ($btn.hasClass('playing')) {
+            $btn.removeClass('playing').addClass('paused');
+            $slider.slick('slickPause');
+          } else {
+            $btn.removeClass('paused').addClass('playing');
+            $slider.slick('slickPlay');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
 </html>
